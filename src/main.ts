@@ -29,11 +29,20 @@ L.tileLayer(mapURL, {
 // Cluster group logic start
 var markers = L.markerClusterGroup();
 
+// custom Icon
+const markerIcon = L.icon({
+  iconUrl: `https://api.geoapify.com/v1/icon?size=xx-large&type=awesome&color=%233e9cfe&icon=church&apiKey=${myAPIKey}`,
+  iconSize: [31, 46], // size of the icon
+  iconAnchor: [15.5, 42], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, -45] // point from which the popup should open relative to the iconAnchor
+});
+
 exampleLocations.forEach((location) => {
     // console.log(location)
     const title = location.key
     const marker = L.marker(new L.LatLng(location.location.lat, location.location.lng), {
-        title: title
+        title: title,
+        icon: markerIcon
       })
     marker.bindPopup(title);
 
@@ -50,7 +59,7 @@ map.locate({setView: true, maxZoom: 16});
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(map)
+    L.marker(e.latlng, {icon: markerIcon}).addTo(map)
         .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
