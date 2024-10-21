@@ -1,0 +1,21 @@
+{
+  "name": "leaflet-church-finder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.13",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "@geoapify/leaflet-address-search-plugin": "^1.0.2",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3"
+  }
+}
