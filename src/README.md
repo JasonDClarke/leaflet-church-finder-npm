@@ -10,3 +10,11 @@ const apiKey = 'YOUR API KEY'
 To deploy: 
 See deployment options here
 https://vite.dev/guide/static-deploy
+
+
+Demo urls:
+Original
+https://www.batchgeo.com/map/3781d0d1f747f15423ca49e883a806c2
+
+Vercel deployment
+https://leaflet-church-finder-npm.vercel.app/
