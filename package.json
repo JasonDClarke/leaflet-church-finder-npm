@@ -17,6 +17,7 @@
   "dependencies": {
     "@geoapify/leaflet-address-search-plugin": "^1.0.2",
     "leaflet": "^1.9.4",
-    "leaflet.markercluster": "^1.5.3"
+    "leaflet.markercluster": "^1.5.3",
+    "vite-plugin-top-level-await": "^1.4.4"
   }
 }
