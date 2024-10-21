@@ -19,6 +19,7 @@ const mapURL = L.Browser.retina
 // Add map tiles layer. Set 20 as the maximal zoom and provide map data attribution.
 L.tileLayer(mapURL, {
   attribution: 'Powered by <a href="https://www.geoapify.com/">Geoapify</a> | © OpenMapTiles © OpenStreetMap contributors',
+  // @ts-ignore
   apiKey: myAPIKey,
   mapStyle: "osm-bright-smooth", // More map styles on https://apidocs.geoapify.com/docs/maps/map-tiles/
   maxZoom: 20
