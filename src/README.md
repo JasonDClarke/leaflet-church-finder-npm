@@ -6,3 +6,7 @@ const apiKey = 'YOUR API KEY'
 2. (optional) update locations in exampleLocations.js
 
 3. Open index.html in chrome
+
+To deploy: 
+See deployment options here
+https://vite.dev/guide/static-deploy
