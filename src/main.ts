@@ -13,8 +13,8 @@ const map = L.map('map', { zoomControl: false }).setView([53.505, -0.09], 6);
 const env = await import.meta.env;
 const myAPIKey = env.VITE_GEOAPIFY_API_KEY; // Get an API Key on https://myprojects.geoapify.com
 const mapURL = L.Browser.retina
-  ? `https://maps.geoapify.com/v1/tile/{mapStyle}/{z}/{x}/{y}.png?apiKey={apiKey}`
-  : `https://maps.geoapify.com/v1/tile/{mapStyle}/{z}/{x}/{y}@2x.png?apiKey={apiKey}`;
+  ? `https://maps.geoapify.com/v1/tile/osm-bright/{z}/{x}/{y}.png?apiKey=${myAPIKey}`
+  : `https://maps.geoapify.com/v1/tile/osm-bright/{z}/{x}/{y}@2x.png?apiKey=${myAPIKey}`;
 
 // Add map tiles layer. Set 20 as the maximal zoom and provide map data attribution.
 L.tileLayer(mapURL, {
@@ -37,6 +37,8 @@ const markerIcon = L.icon({
   popupAnchor: [0, -45] // point from which the popup should open relative to the iconAnchor
 });
 
+
+
 exampleLocations.forEach((location) => {
     // console.log(location)
     const title = location.key
@@ -56,23 +58,23 @@ map.addLayer(markers)
 // map.locate({setView: true, maxZoom: 16});
 
 // @ts-ignore
-function onLocationFound(e) {
-    var radius = e.accuracy;
+// function onLocationFound(e) {
+//     var radius = e.accuracy;
 
-    L.marker(e.latlng, {icon: markerIcon}).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+//     L.marker(e.latlng, {icon: markerIcon}).addTo(map)
+//         .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-    L.circle(e.latlng, radius).addTo(map);
-}
+//     L.circle(e.latlng, radius).addTo(map);
+// }
 
-map.on('locationfound', onLocationFound);
+// map.on('locationfound', onLocationFound);
 
-// @ts-ignore
-function onLocationError(e) {
-    alert(e.message);
-}
+// // @ts-ignore
+// function onLocationError(e) {
+//     alert(e.message);
+// }
 
-map.on('locationerror', onLocationError);
+// map.on('locationerror', onLocationError);
 
 // Add Geoapify Address Search control
 
