@@ -1,9 +1,13 @@
+:root {
+    --map-height: calc(100vh);
+}
+
 body {
     margin: 0;
 }
 
 #map {
-    height: 100vh;
+    height: var(--map-height);
     flex:1;
 }
 
@@ -69,7 +73,7 @@ h2 {
     background-color: black;
     color: white;
     font-size: 12px;
-    height: 100vh;
+    height: var(--map-height);
     overflow-y: scroll;
 }
 
