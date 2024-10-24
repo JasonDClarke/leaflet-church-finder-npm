@@ -27,7 +27,7 @@ L.tileLayer(mapURL, {
 
 
 // Cluster group logic start
-var markers = L.markerClusterGroup();
+var markers = L.markerClusterGroup({showCoverageOnHover: false});
 
 // custom Icon
 const markerIcon = L.icon({
