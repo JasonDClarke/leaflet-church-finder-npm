@@ -75,6 +75,9 @@ h2 {
     font-size: 12px;
     height: var(--map-height);
     overflow-y: scroll;
+    display:flex;
+    flex-direction: column;
+
 }
 
 @media (max-width: 1023px) {
@@ -110,6 +113,11 @@ h2 {
     margin: 0 20px;
 }
 
-.location div {
-    max-width:300px;
+.location .details {
+    width:450px;
+    overflow: hidden;
+}
+
+.location .distance {
+    align-self: end;
 }

@@ -100,10 +100,10 @@ const addressSearchControl = L.control.addressSearch(myAPIKey, {
 
 
   let content = ''
-exampleLocations.forEach((location) => {
+exampleLocations.slice(0,5).forEach((location) => {
     // console.log(location)
     const details = `<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><a href="${location['Church Website URL']}"><img src="./url.svg" />${location['Church Website URL']}</a><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`
-    content += `<div class="location"><img class="pin" src="/mappinoutline.svg" /><div>${details}</div><img src="/distance.svg" /></div>`
+    content += `<div class="location"><img class="pin" src="/mappinoutline.svg" /><div class="details">${details}</div><div class="distance"><img src="/distance.svg" /><p>0.8 mi</p></div></div>`
 })
 
 document.getElementById('sidebar')!.innerHTML = content;
