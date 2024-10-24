@@ -26,3 +26,14 @@ body {
     background-color: black;
     color: white;
 }
+
+/* leaflet popup overrides */
+.leaflet-popup-content-wrapper {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+.leaflet-popup-tip {
+    background-color: black;
+}
