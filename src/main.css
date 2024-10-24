@@ -53,6 +53,13 @@ body {
     color: white;
 }
 
+.leaflet-popup-content a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+}
+
 .leaflet-popup-tip {
     background-color: black;
 }
@@ -91,12 +98,30 @@ h2 {
     flex-wrap: nowrap;
 }
 
+@media (max-width: 1023px) {
+    #container {
+        flex-wrap: wrap;
+    }
+    #map {
+        width: 100%;
+        height: 50vh;
+        flex:auto;
+    }
+}
+
 #sidebar p, #sidebar a {
     margin: 4px 12px;
     display: flex;
     gap: 4px;
     align-items: center;
     color: white;
+}
+
+#sidebar a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
 }
 
 #sidebar h2 {
@@ -106,11 +131,13 @@ h2 {
 .location {
     display: flex;
     margin-right: 12px;
+    margin-bottom: 12px;
 }
 
 .location .pin {
     width:80px;
-    margin: 0 20px;
+    margin: 8px 20px;
+    align-self: start;
 }
 
 .location .details {
