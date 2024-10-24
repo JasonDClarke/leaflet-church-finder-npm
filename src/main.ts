@@ -13,7 +13,7 @@ import { exampleLocations } from './exampleLocations'
 import { haversine } from './distanceUtils/haversine';
 import { sortByDistance } from './distanceUtils/filterSortByDistance';
 
-const map = L.map('map', { zoomControl: false }).setView([53.505, -0.09], 6);
+const map = L.map('map', { zoomControl: false }).setView([53.505, -0.09], 5);
 const env = await import.meta.env;
 const myAPIKey = env.VITE_GEOAPIFY_API_KEY; // Get an API Key on https://myprojects.geoapify.com
 const mapURL = L.Browser.retina
