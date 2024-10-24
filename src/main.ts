@@ -40,7 +40,7 @@ const markerIcon = L.icon({
 exampleLocations.forEach((location) => {
     // console.log(location)
     const title = location.key
-    const marker = L.marker(new L.LatLng(location.location.lat, location.location.lng), {
+    const marker = L.marker(new L.LatLng(location.lat, location.lng), {
         title: title,
         icon: markerIcon
       })
@@ -53,7 +53,7 @@ map.addLayer(markers)
 // cluster group logic end
 
 // user location logic
-map.locate({setView: true, maxZoom: 16});
+// map.locate({setView: true, maxZoom: 16});
 
 // @ts-ignore
 function onLocationFound(e) {

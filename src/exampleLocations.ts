@@ -1,1136 +1,2594 @@
 export const exampleLocations = [
-    {
-      "key": "Credo UTS (Christ for UTS), 2007, Australia",
-      "location": {
-        "lat": -33.8794728,
-        "lng": 151.1984346
-      }
-    },
-    {
-      "key": "St Mark's Anglican Northbridge, 2063, Australia",
-      "location": {
-        "lat": -33.8115514,
-        "lng": 151.2159739
-      }
-    },
-    {
-      "key": "Wahroonga Anglican - Pearces Corner, 2076, Australia",
-      "location": {
-        "lat": -33.7181135,
-        "lng": 151.10873379999998
-      }
-    },
-    {
-      "key": "Wahroonga Anglican Church - Water Street, 2076, Australia",
-      "location": {
-        "lat": -33.7152355,
-        "lng": 151.1206833
-      }
-    },
-    {
-      "key": "Summer Hill Church, 2130, Australia",
-      "location": {
-        "lat": -33.8921471,
-        "lng": 151.13518366692915
-      }
-    },
-    {
-      "key": "Emmanuel Anglican Church, Glenhaven, 2156, Australia",
-      "location": {
-        "lat": -33.69879,
-        "lng": 151.003719
-      }
-    },
-    {
-      "key": "Dungog Anglican Church, 2420, Australia",
-      "location": {
-        "lat": -32.3960716,
-        "lng": 151.7459228
-      }
-    },
-    {
-      "key": "Grafton Presbyterian Church, 2460, Australia",
-      "location": {
-        "lat": -29.679611,
-        "lng": 152.9264913
-      }
-    },
-    {
-      "key": "Evans Head Presbyterian Church, 2473, Australia",
-      "location": {
-        "lat": -29.1156126,
-        "lng": 153.4290322
-      }
-    },
-    {
-      "key": "St Michaels Wollongong, 2500, Australia",
-      "location": {
-        "lat": -34.3710499,
-        "lng": 150.8949919
-      }
-    },
-    {
-      "key": "Scots Presbyterian Church, 2590, Australia",
-      "location": {
-        "lat": -34.6358463,
-        "lng": 148.0268943
-      }
-    },
-    {
-      "key": "Aspendale Presbyterian Church, 3195, Australia",
-      "location": {
-        "lat": -38.0197761,
-        "lng": 145.0973479
-      }
-    },
-    {
-      "key": "Lakeshore Church of Christ, 4556, Australia",
-      "location": {
-        "lat": -26.69909,
-        "lng": 153.054245
-      }
-    },
-    {
-      "key": "CityLight South Church, 5159, Australia",
-      "location": {
-        "lat": -35.13793,
-        "lng": 138.480311
-      }
-    },
-    {
-      "key": "Westminster Presbyterian Church Maida Vale, 6057, Australia",
-      "location": {
-        "lat": -31.9435512,
-        "lng": 116.0327657
-      }
-    },
-    {
-      "key": "Emmanuel Baptist Church, 12078, United States",
-      "location": {
-        "lat": 43.0585601,
-        "lng": -74.3417625674911
-      }
-    },
-    {
-      "key": "Grace Church at Willow Valley, 17584, United States",
-      "location": {
-        "lat": 39.98450115384615,
-        "lng": -76.27555615384615
-      }
-    },
-    {
-      "key": "Trinity Church, 17821, United States",
-      "location": {
-        "lat": 40.96594886324694,
-        "lng": -76.59405626826693
-      }
-    },
-    {
-      "key": "Calvary Presbyterian Church, 48506, United States",
-      "location": {
-        "lat": 43.05688594648829,
-        "lng": -83.59102397993311
-      }
-    },
-    {
-      "key": "Gardenstown New Church, AB45 3YY, United Kingdom",
-      "location": {
-        "lat": 57.67228,
-        "lng": -2.33556
-      }
-    },
-    {
-      "key": "Holy Trinity Frogmore, AL22JU, United Kingdom",
-      "location": {
-        "lat": 51.720364,
-        "lng": -0.3369715
-      }
-    },
-    {
-      "key": "St Mary's Church, Wythall B47 5JW, B47 5QT, United Kingdom",
-      "location": {
-        "lat": 52.391015,
-        "lng": -1.873725
-      }
-    },
-    {
-      "key": "St John's Walmley, B76 1QN, United Kingdom",
-      "location": {
-        "lat": 52.538083,
-        "lng": -1.7993
-      }
-    },
-    {
-      "key": "Christ Church Creekmoor, BH17 7XZ, United Kingdom",
-      "location": {
-        "lat": 50.740647,
-        "lng": -2.002854
-      }
-    },
-    {
-      "key": "Christ church bromley, Br1 4aa, United Kingdom",
-      "location": {
-        "lat": 51.4080304,
-        "lng": 0.0069581
-      }
-    },
-    {
-      "key": "Whitehouse Presbyterian Church, BT37 9SY, United Kingdom",
-      "location": {
-        "lat": 54.6525028,
-        "lng": -5.9148934595566995
-      }
-    },
-    {
-      "key": "The Way Church, BT39 9BB, United Kingdom",
-      "location": {
-        "lat": 54.7522352,
-        "lng": -6.0012783678682915
-      }
-    },
-    {
-      "key": "Foundation Church Belfast, BT5 6GE, United Kingdom",
-      "location": {
-        "lat": 54.5875687,
-        "lng": -5.8668612
-      }
-    },
-    {
-      "key": "Eden church, CB1 1ER, United Kingdom",
-      "location": {
-        "lat": 52.20692,
-        "lng": 0.12954824770246687
-      }
-    },
-    {
-      "key": "Beechwood Chapel, CH43 9LB, United Kingdom",
-      "location": {
-        "lat": 53.3945852,
-        "lng": -3.0843926
-      }
-    },
-    {
-      "key": "Christ church Barnston, CH61 1BW, United Kingdom",
-      "location": {
-        "lat": 53.35515965,
-        "lng": -3.0835323999999997
-      }
-    },
-    {
-      "key": "Chelmsford Presbyterian Church, CM2 6GY, United Kingdom",
-      "location": {
-        "lat": 51.771086,
-        "lng": 0.078465
-      }
-    },
-    {
-      "key": "All Saints Fordham, CO3 9TR, United Kingdom",
-      "location": {
-        "lat": 51.9203525,
-        "lng": 0.8026662
-      }
-    },
-    {
-      "key": "Charlton and Blackheath Christian Fellowship, SE3 8SX, United Kingdom",
-      "location": {
-        "lat": 51.476685,
-        "lng": 0.026696
-      }
-    },
-    {
-      "key": "Christ Church Wyre Forest, DY13 9BE, United Kingdom",
-      "location": {
-        "lat": 52.343353,
-        "lng": -2.268772
-      }
-    },
-    {
-      "key": "Chawn Hill Church, DY9 7JD, United Kingdom",
-      "location": {
-        "lat": 52.4542493,
-        "lng": -2.1213119
-      }
-    },
-    {
-      "key": "Ferniehill Evangelical Church, EH17 7AA, United Kingdom",
-      "location": {
-        "lat": 55.9131651,
-        "lng": -3.1255674
-      }
-    },
-    {
-      "key": "Copplestone Methodist Church, EX17 5NH, United Kingdom",
-      "location": {
-        "lat": 50.7895868,
-        "lng": -3.658963
-      }
-    },
-    {
-      "key": "Rock Community Church, G82 5AF, United Kingdom",
-      "location": {
-        "lat": 55.951463,
-        "lng": -4.586939
-      }
-    },
-    {
-      "key": "Vine Church, Hart District (Commission), GU52 8AQ, United Kingdom",
-      "location": {
-        "lat": 51.253308,
-        "lng": -0.838226
-      }
-    },
-    {
-      "key": "Kenton Evangelical Church, HA3 9HP, United Kingdom",
-      "location": {
-        "lat": 51.5882412,
-        "lng": -0.2992265
-      }
-    },
-    {
-      "key": "St Andrew's Church, HG2 5JE, United Kingdom",
-      "location": {
-        "lat": 53.9979877,
-        "lng": -1.5011045
-      }
-    },
-    {
-      "key": "St Andrew's Church, Kirk Ella, HU10 7NR, United Kingdom",
-      "location": {
-        "lat": 53.7522089,
-        "lng": -0.4543243
-      }
-    },
-    {
-      "key": "St Columba Drypool, HU8 8PA, United Kingdom",
-      "location": {
-        "lat": 53.761464,
-        "lng": -0.311145
-      }
-    },
-    {
-      "key": "Townhead Church, KA16 9DJ, United Kingdom",
-      "location": {
-        "lat": 55.60753,
-        "lng": -4.324197
-      }
-    },
-    {
-      "key": "All Saints, KT19 9QY, United Kingdom",
-      "location": {
-        "lat": 51.355698950000004,
-        "lng": -0.26602248115766397
-      }
-    },
-    {
-      "key": "St Philemon's Church, L8 8BR, United Kingdom",
-      "location": {
-        "lat": 53.3861065,
-        "lng": -2.9594745
-      }
-    },
-    {
-      "key": "Knighton Free Church, LE2 3WB, United Kingdom",
-      "location": {
-        "lat": 52.604859,
-        "lng": -1.117435
-      }
-    },
-    {
-      "key": "Emmanuel Baptist Church, LS18 5JE, United Kingdom",
-      "location": {
-        "lat": 53.8379757,
-        "lng": -1.6530895
-      }
-    },
-    {
-      "key": "Connect Church Maidstone, ME15 9ND, United Kingdom",
-      "location": {
-        "lat": 51.246551,
-        "lng": 0.561598
-      }
-    },
-    {
-      "key": "Hope Family Church, NE38 0LA, United Kingdom",
-      "location": {
-        "lat": 54.897011,
-        "lng": -1.542808
-      }
-    },
-    {
-      "key": "North Breckland Youth For Christ, NR19 1DN, United Kingdom",
-      "location": {
-        "lat": 52.621432,
-        "lng": 0.973463
-      }
-    },
-    {
-      "key": "St Ebbe's,  OX1 1QE, United Kingdom",
-      "location": {
-        "lat": 51.7502682,
-        "lng": -1.2599699114016218
-      }
-    },
-    {
-      "key": "Christ Church, PE9 1RA, United Kingdom",
-      "location": {
-        "lat": 52.661135,
-        "lng": -0.4816754
-      }
-    },
-    {
-      "key": "Grace Church Chichester, PO19 8TX, United Kingdom",
-      "location": {
-        "lat": 50.8307722,
-        "lng": -0.7839216
-      }
-    },
-    {
-      "key": "Coppull Parish Church and St John's Coppull, PR7 4NA, United Kingdom",
-      "location": {
-        "lat": 53.6183096,
-        "lng": -2.6553831
-      }
-    },
-    {
-      "key": "Foundation Church Wokingham, RG40 3DA, United Kingdom",
-      "location": {
-        "lat": 51.4038215,
-        "lng": -0.8006451
-      }
-    },
-    {
-      "key": "All Saints Lindfield, RH16 2HS, United Kingdom",
-      "location": {
-        "lat": 51.0194287,
-        "lng": -0.0745179
-      }
-    },
-    {
-      "key": "Christ Church Endcliffe, S11 8YZ, United Kingdom",
-      "location": {
-        "lat": 53.3677043,
-        "lng": -1.4930211
-      }
-    },
-    {
-      "key": "Longmeadow Evangelical Church, SG2 8HE, United Kingdom",
-      "location": {
-        "lat": 51.8842776,
-        "lng": -0.17199730000000002
-      }
-    },
-    {
-      "key": "Therfield Chapel, SG8 9PZ, United Kingdom",
-      "location": {
-        "lat": 52.018839,
-        "lng": -0.055236
-      }
-    },
-    {
-      "key": "The Hope Centre In North East Cheshire, SK11 7NA, United Kingdom",
-      "location": {
-        "lat": 53.2555922,
-        "lng": -2.1224745
-      }
-    },
-    {
-      "key": "Emmanuel Morden, SM4 4RJ, United Kingdom",
-      "location": {
-        "lat": 51.3844087,
-        "lng": -0.2148221
-      }
-    },
-    {
-      "key": "North Swindon Baptist Church, SN5 4EB, United Kingdom",
-      "location": {
-        "lat": 51.599175,
-        "lng": -1.794567
-      }
-    },
-    {
-      "key": "Efree Church of Lethbridge, T1K7C1, Canada",
-      "location": {
-        "lat": 49.6688985,
-        "lng": -112.7981117
-      }
-    },
-    {
-      "key": "St Mary's Abbotsbury, TQ12 1EH, United Kingdom",
-      "location": {
-        "lat": 50.532208,
-        "lng": -3.614248
-      }
-    },
-    {
-      "key": "All Saints Laleham, TW18 1RZ, United Kingdom",
-      "location": {
-        "lat": 51.4110287,
-        "lng": -0.4858285
-      }
-    },
-    {
-      "key": "Crown Church, UB8 2DZ, United Kingdom",
-      "location": {
-        "lat": 51.5279746,
-        "lng": -0.4815261
-      }
-    },
-    {
-      "key": "Colwall Community Church, WR13 6QG, United Kingdom",
-      "location": {
-        "lat": 52.0901315,
-        "lng": -2.3402637
-      }
-    },
-    {
-      "key": "Christian Life Centre, WV2 3AJ, United Kingdom",
-      "location": {
-        "lat": 52.5738068,
-        "lng": -2.1281887
-      }
-    },
-    {
-      "key": "International Harvest Church Newcastle, NE4 5HJ, United Kingdom",
-      "location": {
-        "lat": 54.97524,
-        "lng": -1.62846
-      }
-    },
-    {
-      "key": "Christian Student Fellowship, 2809, United States",
-      "location": {
-        "lat": 41.643093,
-        "lng": -71.259895
-      }
-    },
-    {
-      "key": "City Church, CH3 5BR, United Kingdom",
-      "location": {
-        "lat": 53.5541252,
-        "lng": -0.10785461610554085
-      }
-    },
-    {
-      "key": "Anchor Church Birmingham, B6 4BE, United Kingdom",
-      "location": {
-        "lat": 52.493056949999996,
-        "lng": -1.8860785933661135
-      }
-    },
-    {
-      "key": "Donvale Christian College, VIC 3111, Australia",
-      "location": {
-        "lat": -37.7727895,
-        "lng": 145.19371274255457
-      }
-    },
-    {
-      "key": "Saanich Baptist Church, V8Z 5B8, Canada",
-      "location": {
-        "lat": 48.487076,
-        "lng": -123.401792
-      }
-    },
-    {
-      "key": "The Oak Church, LS28 6EF, United Kingdom",
-      "location": {
-        "lat": 53.805376249999995,
-        "lng": -1.6697654611259503
-      }
-    },
-    {
-      "key": "Bruntsfield Evangelical Church, EH10 4JU, United Kingdom",
-      "location": {
-        "lat": 55.9381413,
-        "lng": -3.20719850861388
-      }
-    },
-    {
-      "key": "Casuarina Baptist Church, NT 0810, United Kingdom",
-      "location": {
-        "lat": 51.350081,
-        "lng": -0.427953
-      }
-    },
-    {
-      "key": "St Andrew's Church, Leyland, PR25 3EL, United Kingdom",
-      "location": {
-        "lat": 53.6879358,
-        "lng": -2.69730545
-      }
-    },
-    {
-      "key": "North Bradley Baptist Church, BA14 0TN, United Kingdom",
-      "location": {
-        "lat": 51.29647645,
-        "lng": -2.204594922811812
-      }
-    },
-    {
-      "key": "Immanuel, PO19 3HP, United Kingdom",
-      "location": {
-        "lat": 53.736008,
-        "lng": -2.405948
-      }
-    },
-    {
-      "key": "Hebron, CH45 4JL, United Kingdom",
-      "location": {
-        "lat": 53.4220579,
-        "lng": -3.0439749
-      }
-    },
-    {
-      "key": "Teen challenge, 2301, United States",
-      "location": {
-        "lat": 42.8352165,
-        "lng": -73.745655
-      }
-    },
-    {
-      "key": "St Katharine's, Knockholt, with St Margaret's, Halstead, TN14 7LR | TN14 7HQ, United Kingdom",
-      "location": {
-        "lat": 51.326583,
-        "lng": 0.131763
-      }
-    },
-    {
-      "key": "First Baptist Church, 42101, United States",
-      "location": {
-        "lat": 36.988375,
-        "lng": -86.4437858
-      }
-    },
-    {
-      "key": "Christ Church Walkley, S6 2NW, United Kingdom",
-      "location": {
-        "lat": 53.40138,
-        "lng": -1.50026
-      }
-    },
-    {
-      "key": "Heathcote parish church, CV34 6DZ, United Kingdom",
-      "location": {
-        "lat": 52.2684906,
-        "lng": -1.5392725414126909
-      }
-    },
-    {
-      "key": "Staines Congregational Church, TW18 1AY, United Kingdom",
-      "location": {
-        "lat": 51.4298093,
-        "lng": -0.495890537670713
-      }
-    },
-    {
-      "key": "NEAC, 2042, Australia",
-      "location": {
-        "lat": -33.894548099999994,
-        "lng": 151.17915341902915
-      }
-    },
-    {
-      "key": "St Mary's Church, SY4 4NH, United Kingdom",
-      "location": {
-        "lat": 52.78672435,
-        "lng": -2.65616085
-      }
-    },
-    {
-      "key": "St Andrews Church, HP13 7NJ, United Kingdom",
-      "location": {
-        "lat": 51.627871,
-        "lng": -0.722633
-      }
-    },
-    {
-      "key": "Clinton Baptist Church, 49236, United States",
-      "location": {
-        "lat": 42.0565562,
-        "lng": -83.963799
-      }
-    },
-    {
-      "key": "St Mary Magdalene, South Bersted, PO22 9QH, United Kingdom",
-      "location": {
-        "lat": 50.79389,
-        "lng": -0.67196
-      }
-    },
-    {
-      "key": "Holyrood Evangelical Church, EH7 5EP, United Kingdom",
-      "location": {
-        "lat": 55.9587987,
-        "lng": -3.1727658
-      }
-    },
-    {
-      "key": "Wollongong Baptist Church, 2500, Australia",
-      "location": {
-        "lat": -34.43277,
-        "lng": 150.892022
-      }
-    },
-    {
-      "key": "Southam Community Church, CV47 0EP, United Kingdom",
-      "location": {
-        "lat": 52.255389,
-        "lng": -1.388077
-      }
-    },
-    {
-      "key": "Wexford Bible Church, Y35 XW99, United Kingdom",
-      "location": {
-        "lat": 52.485276,
-        "lng": -2.072532
-      }
-    },
-    {
-      "key": "Port and Warrawong Churches, 2505 | 2502, Australia",
-      "location": {
-        "lat": -34.4854733,
-        "lng": 150.8860433
-      }
-    },
-    {
-      "key": "First Baptist Church of Bowling Green, 43402, United States",
-      "location": {
-        "lat": 41.360904,
-        "lng": -83.674573
-      }
-    },
-    {
-      "key": "Ashford Congregational Church, TW15 2QA, United Kingdom",
-      "location": {
-        "lat": 51.432922,
-        "lng": -0.4654882
-      }
-    },
-    {
-      "key": "Almond Valley Christian Reformed Church, 95366, United States",
-      "location": {
-        "lat": 37.73810083221477,
-        "lng": -121.13543838926175
-      }
-    },
-    {
-      "key": "The Vine Community, 99006, United States",
-      "location": {
-        "lat": 47.95446685858586,
-        "lng": -117.46147623232324
-      }
-    },
-    {
-      "key": "Rushmere Baptist Church, IP5 1DF, United Kingdom",
-      "location": {
-        "lat": 52.0723769,
-        "lng": 1.2133382
-      }
-    },
-    {
-      "key": "St Peter's CoE, CW11 3HU, United Kingdom",
-      "location": {
-        "lat": 53.1471758,
-        "lng": -2.3890346
-      }
-    },
-    {
-      "key": "Benson with Ewelme, OX10 6SF | OX10 6HP, United Kingdom",
-      "location": {
-        "lat": 51.61923,
-        "lng": -1.06924
-      }
-    },
-    {
-      "key": "Victoria Baptist Church, BN21 1UE, United Kingdom",
-      "location": {
-        "lat": 50.77976785,
-        "lng": 0.2605009321249374
-      }
-    },
-    {
-      "key": "Bethany School, TN17 1LB, United Kingdom",
-      "location": {
-        "lat": 51.136489,
-        "lng": 0.484522
-      }
-    },
-    {
-      "key": "Holy Trinity, RH1 2BX, United Kingdom",
-      "location": {
-        "lat": 51.2474105,
-        "lng": -0.16685315212702118
-      }
-    },
-    {
-      "key": "Dennistoun Baptist Church, G31 2SB, United Kingdom",
-      "location": {
-        "lat": 55.8596061,
-        "lng": -4.2148886632733635
-      }
-    },
-    {
-      "key": "The Journey Bayless, 63123, United States",
-      "location": {
-        "lat": 38.555693,
-        "lng": -90.287271
-      }
-    },
-    {
-      "key": "Holy Redeemer Streatham, SW16 5UZ, United Kingdom",
-      "location": {
-        "lat": 51.413639,
-        "lng": -0.138638
-      }
-    },
-    {
-      "key": "Christ Church Peckham, SE15 1JF, United Kingdom",
-      "location": {
-        "lat": 51.481995299999994,
-        "lng": -0.06273508338469547
-      }
-    },
-    {
-      "key": "First Baptist Church Pitkin, 70656, United States",
-      "location": {
-        "lat": 30.672698,
-        "lng": -92.424855
-      }
-    },
-    {
-      "key": "Jesmond Parish Church, NE2 4DJ, United Kingdom",
-      "location": {
-        "lat": 54.98230835,
-        "lng": -1.6066004013225101
-      }
-    },
-    {
-      "key": "Grace Community Church, Tipton, DY4 9HL, United Kingdom",
-      "location": {
-        "lat": 52.5396138,
-        "lng": -2.0688088
-      }
-    },
-    {
-      "key": "St Mary's Barcombe, BN8 5TS, United Kingdom",
-      "location": {
-        "lat": 50.911469249999996,
-        "lng": 0.014998388902807084
-      }
-    },
-    {
-      "key": "Staines Congregational church, TW18 1AY, United Kingdom",
-      "location": {
-        "lat": 51.4298093,
-        "lng": -0.495890537670713
-      }
-    },
-    {
-      "key": "Burtonsville Baptist Chrich, 20866, United States",
-      "location": {
-        "lat": 39.10660740117097,
-        "lng": -76.9418457978923
-      }
-    },
-    {
-      "key": "Catonsville United Methodist Church, 21228, United States",
-      "location": {
-        "lat": 39.27157185,
-        "lng": -76.73680532107511
-      }
-    },
-    {
-      "key": "St Johns Anglican, 2756, Australia",
-      "location": {
-        "lat": -33.55492,
-        "lng": 150.844152
-      }
-    },
-    {
-      "key": "Trinity Chippenham, SN14 6RJ, United Kingdom",
-      "location": {
-        "lat": 51.470014,
-        "lng": -2.12904
-      }
-    },
-    {
-      "key": "Bovey Tracey Baptist Church, TQ13 9HT, United Kingdom",
-      "location": {
-        "lat": 50.594926,
-        "lng": -3.675449
-      }
-    },
-    {
-      "key": "Richmond Church, S13 8LT, United Kingdom",
-      "location": {
-        "lat": 53.364549,
-        "lng": -1.4016321106162888
-      }
-    },
-    {
-      "key": "Holy Trinity Stalybridge, SK15 2JS, United Kingdom",
-      "location": {
-        "lat": 53.4827,
-        "lng": -2.05548
-      }
-    },
-    {
-      "key": "Inglewood Christian Reformed Church, T5M 2W4, Canada",
-      "location": {
-        "lat": 53.562187,
-        "lng": -113.535614
-      }
-    },
-    {
-      "key": "Calvary Church, Brighton, BN1 4ND, United Kingdom",
-      "location": {
-        "lat": 50.833743150000004,
-        "lng": -0.13793422553301982
-      }
-    },
-    {
-      "key": "Charlestown Presbyterian Church, 2290, Australia",
-      "location": {
-        "lat": -32.96367,
-        "lng": 151.696201
-      }
-    },
-    {
-      "key": "Parish of Longford, 7301, Tasmania",
-      "location": {
-        "lat": -41.594102,
-        "lng": 147.120614
-      }
-    },
-    {
-      "key": "Shoal Creek, 64068, United States",
-      "location": {
-        "lat": 39.21679869799877,
-        "lng": -94.47572986588204
-      }
-    },
-    {
-      "key": "Grimsby Baptist church, DN34 5DW, United Kingdom",
-      "location": {
-        "lat": 53.551413,
-        "lng": -0.1073273
-      }
-    },
-    {
-      "key": "St Leonard's, BN9 0RB, United Kingdom",
-      "location": {
-        "lat": 50.80454295,
-        "lng": 0.06282105000000149
-      }
-    },
-    {
-      "key": "NCC Equipping People, SE19 1EF, United Kingdom",
-      "location": {
-        "lat": 51.4398544,
-        "lng": 0.7696684691217118
-      }
-    },
-    {
-      "key": "St Margaret's Church, BN16 4JS, United Kingdom",
-      "location": {
-        "lat": 50.828851,
-        "lng": -0.484757
-      }
-    },
-    {
-      "key": "Christ Church Cockfosters, EN4 9JQ, United Kingdom",
-      "location": {
-        "lat": 51.6514357,
-        "lng": -0.15080943057093102
-      }
-    },
-    {
-      "key": "Worthing Tabernacle, BN11 1BN, United Kingdom",
-      "location": {
-        "lat": 50.8148216,
-        "lng": -0.3709794515336121
-      }
-    },
-    {
-      "key": "Mosaic Church, SE1 6EZ, United Kingdom",
-      "location": {
-        "lat": 51.496868,
-        "lng": -0.104773
-      }
-    },
-    {
-      "key": "Christ Church Endcliffe, S11 8RS | S10 2NS, United Kingdom",
-      "location": {
-        "lat": 53.3681689,
-        "lng": -1.5021718858522726
-      }
-    },
-    {
-      "key": "King's Church, 8025, New Zealand",
-      "location": {
-        "lat": -43.5632732,
-        "lng": 172.57260918947003
-      }
-    },
-    {
-      "key": "Carey Baptist Church, RG1 7JS, United Kingdom",
-      "location": {
-        "lat": 51.45291205,
-        "lng": -0.9795827809734523
-      }
-    },
-    {
-      "key": "Biggar Parish Church, ML12 6DT, United Kingdom",
-      "location": {
-        "lat": 55.62438,
-        "lng": -3.52521
-      }
-    },
-    {
-      "key": "Gwersyllt Congregational Church, LL114NT, United Kingdom",
-      "location": {
-        "lat": 53.071651,
-        "lng": -3.013508
-      }
-    },
-    {
-      "key": "Beeston Free Church, NG9 2FY, United Kingdom",
-      "location": {
-        "lat": 52.932575650000004,
-        "lng": -1.2072403973266854
-      }
-    },
-    {
-      "key": "Barneys, 5008, Australia",
-      "location": {
-        "lat": -34.886438,
-        "lng": 138.568424
-      }
-    },
-    {
-      "key": "Cornerstone Church Swindon, SN25 2PP, United Kingdom",
-      "location": {
-        "lat": 51.614547,
-        "lng": -1.814731
-      }
-    },
-    {
-      "key": "Glasgow Grace Church, G20 8TH, United Kingdom",
-      "location": {
-        "lat": 55.88667,
-        "lng": -4.28335
-      }
-    },
-    {
-      "key": "St Margaret's, SS17 0EP, United Kingdom",
-      "location": {
-        "lat": 51.514507,
-        "lng": 0.427098
-      }
-    },
-    {
-      "key": "Christ Church walkley, S6 2NW, United Kingdom",
-      "location": {
-        "lat": 53.40138,
-        "lng": -1.50026
-      }
-    },
-    {
-      "key": "St George's Church, Morden, SM4 5RJ, United Kingdom",
-      "location": {
-        "lat": 51.378221,
-        "lng": -0.24088
-      }
-    },
-    {
-      "key": "Christ Church, DA14 6NJ, United Kingdom",
-      "location": {
-        "lat": 51.426931550000006,
-        "lng": 0.09653087764074178
-      }
-    },
-    {
-      "key": "St Luke's Reigate, RH2 8HY, United Kingdom",
-      "location": {
-        "lat": 51.22656,
-        "lng": -0.20769
-      }
-    },
-    {
-      "key": "Junction Road Evangelical Church, B21 0EL, United Kingdom",
-      "location": {
-        "lat": 52.5044633,
-        "lng": -1.9557036
-      }
-    },
-    {
-      "key": "Grimsby Baptist Church, DN34 5DW, United Kingdom",
-      "location": {
-        "lat": 53.551413,
-        "lng": -0.1073273
-      }
-    },
-    {
-      "key": "Wilberforce Anglican Church, 2756, Australia",
-      "location": {
-        "lat": -33.55492,
-        "lng": 150.844152
-      }
-    },
-    {
-      "key": "St Cuthbert's Church, LE8 9FE, United Kingdom",
-      "location": {
-        "lat": 52.574303,
-        "lng": -1.036336
-      }
-    },
-    {
-      "key": "St Andrew's Church, BN3 2AD, United Kingdom",
-      "location": {
-        "lat": 50.828262,
-        "lng": -0.1742744
-      }
-    },
-    {
-      "key": "St Mary's Wargrave, RG10 8EU, United Kingdom",
-      "location": {
-        "lat": 51.49926,
-        "lng": -0.87352
-      }
-    },
-    {
-      "key": "St Mary Barcombe, BN8 5TS, United Kingdom",
-      "location": {
-        "lat": 50.911455,
-        "lng": 0.016348
-      }
-    },
-    {
-      "key": "Holy Trinity Bungay, NR35 1EH, United Kingdom",
-      "location": {
-        "lat": 52.455649,
-        "lng": 1.4384171666666665
-      }
-    },
-    {
-      "key": "Cornerstone Church Newcastle, NE4 7SF, United Kingdom",
-      "location": {
-        "lat": 54.96715,
-        "lng": -1.63085
-      }
-    },
-    {
-      "key": "Hesters Way Baptist Church, GL51 0DH, United Kingdom",
-      "location": {
-        "lat": 51.9086471,
-        "lng": -2.1141778
-      }
-    },
-    {
-      "key": "St John's Presbyterian, 7000, Australia",
-      "location": {
-        "lat": -42.88689745,
-        "lng": 147.32541013136
-      }
-    }
-  ]
+  {
+    "Notes": "",
+    "Church or Organisation": "Credo UTS (Christ for UTS)",
+    "Location / City": "Sydney, Australia",
+    "Church Address": "Ultimo, NSW",
+    "Church Postcode / ZIP Code": "2007",
+    "Church Country": "Australia",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://credo.org.au/",
+    "Church Denomination": "Evangelical multi-denominational",
+    "Course start date": "02-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Credo UTS (Christ for UTS), 2007, Australia",
+    "lng": 151.1984346,
+    "lat": -33.8794728
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mark's Anglican Northbridge",
+    "Location / City": "Sydney",
+    "Church Address": "17 Tunks St, Northbridge NSW",
+    "Church Postcode / ZIP Code": "2063",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 412 802 275",
+    "Church Website URL": "https://www.northbridgeanglican.org.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "05-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mark's Anglican Northbridge, 2063, Australia",
+    "lng": 151.2159739,
+    "lat": -33.8115514
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Wahroonga Anglican - Pearces Corner",
+    "Location / City": "WAHROONGA",
+    "Church Address": "1711 Pacific Hwy, Wahroonga NSW",
+    "Church Postcode / ZIP Code": "2076",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 9489 3278",
+    "Church Website URL": "https://wahroonga.church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "15-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Wahroonga Anglican - Pearces Corner, 2076, Australia",
+    "lng": 151.10873379999998,
+    "lat": -33.7181135
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Wahroonga Anglican Church - Water Street",
+    "Location / City": "Sydney",
+    "Church Address": "2 Water St, Wahroonga, NSW",
+    "Church Postcode / ZIP Code": "2076",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 9489 3278",
+    "Church Website URL": "https://wahroonga.church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "15-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Wahroonga Anglican Church - Water Street, 2076, Australia",
+    "lng": 151.1206833,
+    "lat": -33.7152355
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Summer Hill Church",
+    "Location / City": "Sydney",
+    "Church Address": "2 Henson St, Summer Hill NSW 2130, Australia",
+    "Church Postcode / ZIP Code": "2130",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 9798 5300",
+    "Church Website URL": "https://www.summerhillchurch.org.au/",
+    "Church Denomination": "Anglican ",
+    "Course start date": "02-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Summer Hill Church, 2130, Australia",
+    "lng": 151.13518366692915,
+    "lat": -33.8921471
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Emmanuel Anglican Church, Glenhaven",
+    "Location / City": "Glenhaven, Sydney",
+    "Church Address": "31 Glenhaven Road, Glenhaven, NSW",
+    "Church Postcode / ZIP Code": "2156",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 8850 1311",
+    "Church Website URL": "https://www.glenhaven.church/",
+    "Church Denomination": "Anglican ",
+    "Course start date": "07-Jul-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Emmanuel Anglican Church, Glenhaven, 2156, Australia",
+    "lng": 151.003719,
+    "lat": -33.69879
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Dungog Anglican Church",
+    "Location / City": "Bendolba",
+    "Church Address": "20 Hillview Avenue, Bendolba, NSW",
+    "Church Postcode / ZIP Code": "2420",
+    "Church Country": "Australia",
+    "Church Contact number / email": "(+61) 0491 007 193",
+    "Church Website URL": "https://dungoganglican.church/",
+    "Church Denomination": "Anglican ",
+    "Course start date": "01-Dec-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Dungog Anglican Church, 2420, Australia",
+    "lng": 151.7459228,
+    "lat": -32.3960716
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grafton Presbyterian Church",
+    "Location / City": "Grafton NSW Australia",
+    "Church Address": "116 Oliver Street Grafton",
+    "Church Postcode / ZIP Code": "2460",
+    "Church Country": "Australia",
+    "Church Contact number / email": "(02) 66422463",
+    "Church Website URL": "https://graftonpc.org.au/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "23-Jul-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grafton Presbyterian Church, 2460, Australia",
+    "lng": 152.9264913,
+    "lat": -29.679611
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Evans Head Presbyterian Church",
+    "Location / City": "Evans Head",
+    "Church Address": "63 Woodburn Street, Evans Head",
+    "Church Postcode / ZIP Code": "2473",
+    "Church Country": "Australia",
+    "Church Contact number / email": "(02) 6682 4976",
+    "Church Website URL": "https://www.evansheadpc.org",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "04-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Evans Head Presbyterian Church, 2473, Australia",
+    "lng": 153.4290322,
+    "lat": -29.1156126
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Michaels Wollongong",
+    "Location / City": "Wollongong",
+    "Church Address": "74 Church St Wollongong | 121 Princes Hwy, Corrimal",
+    "Church Postcode / ZIP Code": "2500",
+    "Church Country": "Australia",
+    "Church Contact number / email": "(02) 4228 9132",
+    "Church Website URL": "https://wollongonganglican.org/",
+    "Church Denomination": "Anglican ",
+    "Course start date": "28-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Michaels Wollongong, 2500, Australia",
+    "lng": 150.8949919,
+    "lat": -34.3710499
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Scots Presbyterian Church",
+    "Location / City": "Cootamundra",
+    "Church Address": "351 Parker Street, cnr Francis St, Cootamundra",
+    "Church Postcode / ZIP Code": "2590",
+    "Church Country": "Australia",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.scotsatcoota.com/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "08-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Scots Presbyterian Church, 2590, Australia",
+    "lng": 148.0268943,
+    "lat": -34.6358463
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Aspendale Presbyterian Church",
+    "Location / City": "Aspendale",
+    "Church Address": " 63-66 Station St, Aspendale, VIC",
+    "Church Postcode / ZIP Code": "3195",
+    "Church Country": "Australia",
+    "Church Contact number / email": "(03) 9580 6161",
+    "Church Website URL": "https://aspendalepc.org.au/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "02-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Aspendale Presbyterian Church, 3195, Australia",
+    "lng": 145.0973479,
+    "lat": -38.0197761
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Lakeshore Church of Christ",
+    "Location / City": "Buderim, Queensland, Australia",
+    "Church Address": "1 Lakeshore Avenue, North Buderim, Queensland",
+    "Church Postcode / ZIP Code": "4556",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 7 5476 7085",
+    "Church Website URL": "https://www.lakeshorechurch.org.au/",
+    "Church Denomination": "Community Church / Non-denomination",
+    "Course start date": "06-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Lakeshore Church of Christ, 4556, Australia",
+    "lng": 153.054245,
+    "lat": -26.69909
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "CityLight South Church",
+    "Location / City": "Adelaide, South Australia",
+    "Church Address": "Price St, Christies Beach SA",
+    "Church Postcode / ZIP Code": "5159",
+    "Church Country": "Australia",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.citylightsouth.au/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "08-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "CityLight South Church, 5159, Australia",
+    "lng": 138.480311,
+    "lat": -35.13793
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Westminster Presbyterian Church Maida Vale",
+    "Location / City": "Maida Vale, Australia",
+    "Church Address": "105 Watsonia Road, Maida Vale",
+    "Church Postcode / ZIP Code": "6057",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 8 9454 7401",
+    "Church Website URL": "https://www.wpcmv.net/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "18-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Westminster Presbyterian Church Maida Vale, 6057, Australia",
+    "lng": 116.0327657,
+    "lat": -31.9435512
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Emmanuel Baptist Church",
+    "Location / City": "Gloversville",
+    "Church Address": "12 James St, Gloversville, NY",
+    "Church Postcode / ZIP Code": "12078",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 518-332-7800",
+    "Church Website URL": "https://www.ebcny.church/",
+    "Church Denomination": "Baptist",
+    "Course start date": "22-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Emmanuel Baptist Church, 12078, United States",
+    "lng": -74.3417625674911,
+    "lat": 43.0585601
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grace Church at Willow Valley",
+    "Location / City": "Willow Street",
+    "Church Address": "212 Peach Bottom Road, Willow Street, PA",
+    "Church Postcode / ZIP Code": "17584",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 (717) 464-5333",
+    "Church Website URL": "https://gccws.net/",
+    "Church Denomination": "Evangelical Congregational Church",
+    "Course start date": "08-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grace Church at Willow Valley, 17584, United States",
+    "lng": -76.27555615384615,
+    "lat": 39.98450115384615
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Trinity Church",
+    "Location / City": "Danville",
+    "Church Address": "84 Lombard Ave Danville, PA",
+    "Church Postcode / ZIP Code": "17821",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1  570-275-1255",
+    "Church Website URL": "https://www.trinitychurchdanville.org/",
+    "Church Denomination": "Global Methodist Church",
+    "Course start date": "12-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Trinity Church, 17821, United States",
+    "lng": -76.59405626826693,
+    "lat": 40.96594886324694
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Calvary Presbyterian Church",
+    "Location / City": "Flint",
+    "Church Address": "6100 Richfield Rd, Flint, MI",
+    "Church Postcode / ZIP Code": "48506",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 810-736-4100",
+    "Church Website URL": "http://calvaryflint.com/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "01-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Calvary Presbyterian Church, 48506, United States",
+    "lng": -83.59102397993311,
+    "lat": 43.05688594648829
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Gardenstown New Church",
+    "Location / City": "Gardenstown",
+    "Church Address": "The Green, Gardenstown, Banff",
+    "Church Postcode / ZIP Code": "AB45 3YY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01261 851256",
+    "Church Website URL": "http://www.gardenstownchurch.co.uk/",
+    "Church Denomination": "",
+    "Course start date": "27-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Gardenstown New Church, AB45 3YY, United Kingdom",
+    "lng": -2.33556,
+    "lat": 57.67228
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holy Trinity Frogmore",
+    "Location / City": "St Albans",
+    "Church Address": "Holy Trinity Church, 37 Frogmore, St Albans",
+    "Church Postcode / ZIP Code": "AL22JU",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01727 873974",
+    "Church Website URL": "http://www.hotfrog.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "16-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holy Trinity Frogmore, AL22JU, United Kingdom",
+    "lng": -0.3369715,
+    "lat": 51.720364
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary's Church, Wythall B47 5JW",
+    "Location / City": "BIRMINGHAM",
+    "Church Address": "5JN, Shawhurst Ln, Hollywood, Birmingham",
+    "Church Postcode / ZIP Code": "B47 5QT",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01564 823248",
+    "Church Website URL": "http://www.wythallchurch.net/",
+    "Church Denomination": "Anglican",
+    "Course start date": "01-Oct-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary's Church, Wythall B47 5JW, B47 5QT, United Kingdom",
+    "lng": -1.873725,
+    "lat": 52.391015
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St John's Walmley",
+    "Location / City": "Birmingham",
+    "Church Address": "4 Walmley Rd, Walmley, Birmingham, Sutton Coldfield",
+    "Church Postcode / ZIP Code": "B76 1QN",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0121 313 0413",
+    "Church Website URL": "https://www.stjohnswalmley.com/",
+    "Church Denomination": "Anglican",
+    "Course start date": "08-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St John's Walmley, B76 1QN, United Kingdom",
+    "lng": -1.7993,
+    "lat": 52.538083
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Creekmoor",
+    "Location / City": "Poole",
+    "Church Address": "28 Northmead Dr, Poole",
+    "Church Postcode / ZIP Code": "BH17 7XZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01202 267427",
+    "Church Website URL": "http://www.christchurchcreekmoor.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "04-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Creekmoor, BH17 7XZ, United Kingdom",
+    "lng": -2.002854,
+    "lat": 50.740647
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ church bromley",
+    "Location / City": "Bromley , kent",
+    "Church Address": "Christ Church Bromley, Highland Rd, Bromley",
+    "Church Postcode / ZIP Code": "Br1 4aa",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8464 1898",
+    "Church Website URL": "http://www.christchurchbromley.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "06-Nov-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ church bromley, Br1 4aa, United Kingdom",
+    "lng": 0.0069581,
+    "lat": 51.4080304
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Whitehouse Presbyterian Church",
+    "Location / City": "Newtownabbey",
+    "Church Address": "143-145 Shore Rd, Newtownabbey",
+    "Church Postcode / ZIP Code": "BT37 9SY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "028 9036 9852",
+    "Church Website URL": "http://www.whitehousepc.org/",
+    "Church Denomination": "Presbyterian�",
+    "Course start date": "04-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Whitehouse Presbyterian Church, BT37 9SY, United Kingdom",
+    "lng": -5.9148934595566995,
+    "lat": 54.6525028
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "The Way Church",
+    "Location / City": "Ballyclare",
+    "Church Address": "The Way Church, Town Hall, The Square, Ballyclare",
+    "Church Postcode / ZIP Code": "BT39 9BB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "7739310277",
+    "Church Website URL": "https://thewaychurchni.com/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "25-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "The Way Church, BT39 9BB, United Kingdom",
+    "lng": -6.0012783678682915,
+    "lat": 54.7522352
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Foundation Church Belfast",
+    "Location / City": "Belfast Northern Ireland",
+    "Church Address": "2d Knockwood Cres, Belfast",
+    "Church Postcode / ZIP Code": "BT5 6GE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://foundationchurchbelfast.com/",
+    "Church Denomination": "Baptist",
+    "Course start date": "08-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Foundation Church Belfast, BT5 6GE, United Kingdom",
+    "lng": -5.8668612,
+    "lat": 54.5875687
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Eden church",
+    "Location / City": "Cambridge",
+    "Church Address": "1 Fitzroy St, Cambridge",
+    "Church Postcode / ZIP Code": "CB1 1ER",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "(01223) 361250",
+    "Church Website URL": "https://eden-cambridge.or",
+    "Church Denomination": "Baptist",
+    "Course start date": "26-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Eden church, CB1 1ER, United Kingdom",
+    "lng": 0.12954824770246687,
+    "lat": 52.20692
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Beechwood Chapel",
+    "Location / City": "PRENTON",
+    "Church Address": "Fifth Ave, Birkenhead",
+    "Church Postcode / ZIP Code": "CH43 9LB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0151 678 5876",
+    "Church Website URL": "https://beechwoodchapel.org/",
+    "Church Denomination": "Community Church / Non-denomination",
+    "Course start date": "03-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Beechwood Chapel, CH43 9LB, United Kingdom",
+    "lng": -3.0843926,
+    "lat": 53.3945852
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ church Barnston",
+    "Location / City": "Barnston, Wirral",
+    "Church Address": "87 Barnston Rd, Barnston, Wirral",
+    "Church Postcode / ZIP Code": "CH61 1BW",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0151 648 2404",
+    "Church Website URL": "https://www.barnston.info/",
+    "Church Denomination": "Anglican",
+    "Course start date": "08-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ church Barnston, CH61 1BW, United Kingdom",
+    "lng": -3.0835323999999997,
+    "lat": 53.35515965
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Chelmsford Presbyterian Church",
+    "Location / City": "Chelmsford, Essex",
+    "Church Address": "Bishop Hall Lane Marconi Building Room MAR 001, Chelmsford",
+    "Church Postcode / ZIP Code": "CM2 6GY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01245 690559",
+    "Church Website URL": "http://www.chelmsfordpres.org.uk/",
+    "Church Denomination": "Presbyterian ",
+    "Course start date": "16-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Chelmsford Presbyterian Church, CM2 6GY, United Kingdom",
+    "lng": 0.078465,
+    "lat": 51.771086
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "All Saints Fordham",
+    "Location / City": "Colchester",
+    "Church Address": " Fordham Hall, Church Rd, Fordham, Colchester",
+    "Church Postcode / ZIP Code": "CO3 9TR",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01206 243261",
+    "Church Website URL": "http://www.fordhamchurch.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "All Saints Fordham, CO3 9TR, United Kingdom",
+    "lng": 0.8026662,
+    "lat": 51.9203525
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Charlton and Blackheath Christian Fellowship",
+    "Location / City": "London",
+    "Church Address": "2 Reynolds Pl, London",
+    "Church Postcode / ZIP Code": "SE3 8SX",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07768 138363",
+    "Church Website URL": "http://www.cbcf.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "17-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Charlton and Blackheath Christian Fellowship, SE3 8SX, United Kingdom",
+    "lng": 0.026696,
+    "lat": 51.476685
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Wyre Forest",
+    "Location / City": "Stourport-on-Severn",
+    "Church Address": "36 Summerfield Road, Stourport-on-Severn, Worcestershire",
+    "Church Postcode / ZIP Code": "DY13 9BE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0115 944 0609",
+    "Church Website URL": "https://www.christchurchwyreforest.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "17-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Wyre Forest, DY13 9BE, United Kingdom",
+    "lng": -2.268772,
+    "lat": 52.343353
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Chawn Hill Church",
+    "Location / City": "Stourbridge",
+    "Church Address": "Chawn Hill, Pedmore, Stourbridge",
+    "Church Postcode / ZIP Code": "DY9 7JD",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01384 397287",
+    "Church Website URL": "http://chawnhillchurch.org.uk/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "01-Oct-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Chawn Hill Church, DY9 7JD, United Kingdom",
+    "lng": -2.1213119,
+    "lat": 52.4542493
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Ferniehill Evangelical Church",
+    "Location / City": "Edinburgh",
+    "Church Address": "19 Ferniehill Rd, Edinburgh",
+    "Church Postcode / ZIP Code": "EH17 7AA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0131 664 2853",
+    "Church Website URL": "http://ferniehillchurch.org/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "14-Oct-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Ferniehill Evangelical Church, EH17 7AA, United Kingdom",
+    "lng": -3.1255674,
+    "lat": 55.9131651
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Copplestone Methodist Church",
+    "Location / City": "Copplestone",
+    "Church Address": "2 The Cross, Copplestone, Crediton",
+    "Church Postcode / ZIP Code": "EX17 5NH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01363 877281",
+    "Church Website URL": "https://www.copplestonechurch.org.uk/",
+    "Church Denomination": "Methodist",
+    "Course start date": "23-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Copplestone Methodist Church, EX17 5NH, United Kingdom",
+    "lng": -3.658963,
+    "lat": 50.7895868
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Rock Community Church",
+    "Location / City": "Dumbarton",
+    "Church Address": "17a Quarry Knowe, Dumbarton",
+    "Church Postcode / ZIP Code": "G82 5AF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01389 600 245",
+    "Church Website URL": "https://www.rockcommunitychurch.org.uk/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "24-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Rock Community Church, G82 5AF, United Kingdom",
+    "lng": -4.586939,
+    "lat": 55.951463
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Vine Church, Hart District (Commission)",
+    "Location / City": "Fleet & Church Crookham",
+    "Church Address": "Church Crookham Community Centre, Boyce Road",
+    "Church Postcode / ZIP Code": "GU52 8AQ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01256 702821",
+    "Church Website URL": "https://www.thevinechurch.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "30-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Vine Church, Hart District (Commission), GU52 8AQ, United Kingdom",
+    "lng": -0.838226,
+    "lat": 51.253308
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Kenton Evangelical Church",
+    "Location / City": "Harrow, London",
+    "Church Address": "15 Charlton Rd, Harrow",
+    "Church Postcode / ZIP Code": "HA3 9HP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8863 7826",
+    "Church Website URL": "https://www.kentonevangelicalchurch.org/index.html",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "16-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Kenton Evangelical Church, HA3 9HP, United Kingdom",
+    "lng": -0.2992265,
+    "lat": 51.5882412
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Andrew's Church",
+    "Location / City": "Harrogate",
+    "Church Address": "High Street, Starbeck, Harrogate",
+    "Church Postcode / ZIP Code": "HG2 5JE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01423 889162",
+    "Church Website URL": "http://andysonline.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "09-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Andrew's Church, HG2 5JE, United Kingdom",
+    "lng": -1.5011045,
+    "lat": 53.9979877
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Andrew's Church, Kirk Ella",
+    "Location / City": "Hull",
+    "Church Address": "The Rectory, 2 School Lane, Kirk Ella, East Riding of Yorkshire",
+    "Church Postcode / ZIP Code": "HU10 7NR",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "(01482) 654713",
+    "Church Website URL": "https://www.kirkellachurch.com/",
+    "Church Denomination": "Anglican",
+    "Course start date": "02-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Andrew's Church, Kirk Ella, HU10 7NR, United Kingdom",
+    "lng": -0.4543243,
+    "lat": 53.7522089
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Columba Drypool",
+    "Location / City": "Hull",
+    "Church Address": "ST Columbas Church Hall, 139 Laburnum Ave, Garden Village, Hull",
+    "Church Postcode / ZIP Code": "HU8 8PA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "1482786553",
+    "Church Website URL": "https://www.drypoolparish.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "11-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Columba Drypool, HU8 8PA, United Kingdom",
+    "lng": -0.311145,
+    "lat": 53.761464
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Townhead Church",
+    "Location / City": "Newmilns",
+    "Church Address": "141 Main St, Newmilns ",
+    "Church Postcode / ZIP Code": "KA16 9DJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.townheadchurch.com/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "14-Jul-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Townhead Church, KA16 9DJ, United Kingdom",
+    "lng": -4.324197,
+    "lat": 55.60753
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "All Saints",
+    "Location / City": "West Ewell",
+    "Church Address": "7 Church Rd, West Ewell, Surrey",
+    "Church Postcode / ZIP Code": "KT19 9QY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8393 7273",
+    "Church Website URL": "https://www.allsaintswestewell.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "15-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "All Saints, KT19 9QY, United Kingdom",
+    "lng": -0.26602248115766397,
+    "lat": 51.355698950000004
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Philemon's Church",
+    "Location / City": "Liverpool",
+    "Church Address": "78 Admiral St, Toxteth, Liverpool",
+    "Church Postcode / ZIP Code": "L8 8BR",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0151 727 0687",
+    "Church Website URL": "http://www.stphilemons.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "10-Nov-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Philemon's Church, L8 8BR, United Kingdom",
+    "lng": -2.9594745,
+    "lat": 53.3861065
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Knighton Free Church",
+    "Location / City": "Leicester",
+    "Church Address": "Brinsmead Rd, Leicester",
+    "Church Postcode / ZIP Code": "LE2 3WB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0116 270 4101",
+    "Church Website URL": "http://www.knighton.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "26-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Knighton Free Church, LE2 3WB, United Kingdom",
+    "lng": -1.117435,
+    "lat": 52.604859
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Emmanuel Baptist Church",
+    "Location / City": "Leeds",
+    "Church Address": " Hall Lane, Horsforth",
+    "Church Postcode / ZIP Code": "LS18 5JE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0113 259 1283",
+    "Church Website URL": "http://www.ebcleeds.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "02-Oct-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Emmanuel Baptist Church, LS18 5JE, United Kingdom",
+    "lng": -1.6530895,
+    "lat": 53.8379757
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Connect Church Maidstone",
+    "Location / City": "Maidstone",
+    "Church Address": "Skills and Community Centre, Titchfield Rd, Maidstone",
+    "Church Postcode / ZIP Code": "ME15 9ND",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07757 129136",
+    "Church Website URL": "https://connectchurchmaidstone.org.uk/",
+    "Church Denomination": "Pentecostal",
+    "Course start date": "09-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Connect Church Maidstone, ME15 9ND, United Kingdom",
+    "lng": 0.561598,
+    "lat": 51.246551
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Hope Family Church",
+    "Location / City": "Washington",
+    "Church Address": "37 Brancepeth Rd, Oxclose Village, Washington",
+    "Church Postcode / ZIP Code": "NE38 0LA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0191 431 2568",
+    "Church Website URL": "https://www.hopefamilychurch.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "16-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Hope Family Church, NE38 0LA, United Kingdom",
+    "lng": -1.542808,
+    "lat": 54.897011
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "North Breckland Youth For Christ",
+    "Location / City": "Dereham",
+    "Church Address": "Office C/o Faye Cottage Reymerston Rd, Garvestone, Norfolk",
+    "Church Postcode / ZIP Code": "NR19 1DN",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://northbrecklandyfc.org.uk/",
+    "Church Denomination": "",
+    "Course start date": "26-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "North Breckland Youth For Christ, NR19 1DN, United Kingdom",
+    "lng": 0.973463,
+    "lat": 52.621432
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Ebbe's",
+    "Location / City": "OXFORD",
+    "Church Address": "2 Roger Bacon Lane, Oxford",
+    "Church Postcode / ZIP Code": " OX1 1QE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+44 (0)1865 240438",
+    "Church Website URL": "https://stebbes.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "10-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Ebbe's,  OX1 1QE, United Kingdom",
+    "lng": -1.2599699114016218,
+    "lat": 51.7502682
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church",
+    "Location / City": "Stamford",
+    "Church Address": "Green Ln, Stamford",
+    "Church Postcode / ZIP Code": "PE9 1RA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01780 766446",
+    "Church Website URL": "http://www.christchurchstamford.com/",
+    "Church Denomination": "Anglican",
+    "Course start date": "05-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church, PE9 1RA, United Kingdom",
+    "lng": -0.4816754,
+    "lat": 52.661135
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grace Church Chichester",
+    "Location / City": "Chichester",
+    "Church Address": "Grace Centre, Terminus Rd, Chichester",
+    "Church Postcode / ZIP Code": "PO19 8TX",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01243 778500",
+    "Church Website URL": "https://wearegrace.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "25-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grace Church Chichester, PO19 8TX, United Kingdom",
+    "lng": -0.7839216,
+    "lat": 50.8307722
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Coppull Parish Church and St John's Coppull",
+    "Location / City": "Chorley",
+    "Church Address": "The Vicarage, 209 Chapel Lane Coppull",
+    "Church Postcode / ZIP Code": "PR7 4NA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01257 791218",
+    "Church Website URL": "https://chorleychurchnetwork.com/listing/coppull-parish-church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "05-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Coppull Parish Church and St John's Coppull, PR7 4NA, United Kingdom",
+    "lng": -2.6553831,
+    "lat": 53.6183096
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Foundation Church Wokingham",
+    "Location / City": "Wokingham",
+    "Church Address": "Oakwood, Waterloo Road, Wokingham",
+    "Church Postcode / ZIP Code": "RG40 3DA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "http://www.foundationchurch.org.uk/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "25-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Foundation Church Wokingham, RG40 3DA, United Kingdom",
+    "lng": -0.8006451,
+    "lat": 51.4038215
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "All Saints Lindfield",
+    "Location / City": "Lindfield",
+    "Church Address": "122a High St, Lindfield, Haywards Heath",
+    "Church Postcode / ZIP Code": "RH16 2HS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01444 482405",
+    "Church Website URL": "https://www.allsaintslindfield.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "29-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "All Saints Lindfield, RH16 2HS, United Kingdom",
+    "lng": -0.07827599311290784,
+    "lat": 51.0158184
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Endcliffe",
+    "Location / City": "Sheffield",
+    "Church Address": "Ground Floor, Unit 4, Westbrook Court, 2 Sharrow Vale Road, Sheffield",
+    "Church Postcode / ZIP Code": "S11 8YZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07968 980554",
+    "Church Website URL": "https://www.endcliffechurch.co.u",
+    "Church Denomination": "Anglican",
+    "Course start date": "13-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Endcliffe, S11 8YZ, United Kingdom",
+    "lng": -1.4930211,
+    "lat": 53.3677043
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Longmeadow Evangelical Church",
+    "Location / City": "Stevenage",
+    "Church Address": "Oaks Cross, Broadwater, Stevenage",
+    "Church Postcode / ZIP Code": "SG2 8HE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+44 (0)1438 369257",
+    "Church Website URL": "https://longmeadow-church.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "30-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Longmeadow Evangelical Church, SG2 8HE, United Kingdom",
+    "lng": -0.17199730000000002,
+    "lat": 51.8842776
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Therfield Chapel",
+    "Location / City": "Therfield, Royston",
+    "Church Address": "The Causeway, Therfield, Royston",
+    "Church Postcode / ZIP Code": "SG8 9PZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01763 287220",
+    "Church Website URL": "https://therfieldchapel.org/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "13-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Therfield Chapel, SG8 9PZ, United Kingdom",
+    "lng": -0.055236,
+    "lat": 52.018839
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "The Hope Centre In North East Cheshire",
+    "Location / City": "Macclesfield",
+    "Church Address": "16-18 Park Grn, Macclesfield",
+    "Church Postcode / ZIP Code": "SK11 7NA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01625 404384",
+    "Church Website URL": "http://www.hopecentremacc.com/",
+    "Church Denomination": "N/A",
+    "Course start date": "10-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "The Hope Centre In North East Cheshire, SK11 7NA, United Kingdom",
+    "lng": -2.1224745,
+    "lat": 53.2555922
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Emmanuel Morden",
+    "Location / City": "Dudley Drive, Morden",
+    "Church Address": "Dudley Dr, Morden",
+    "Church Postcode / ZIP Code": "SM4 4RJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8330 6566",
+    "Church Website URL": "http://www.emmanuelmorden.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "16-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Emmanuel Morden, SM4 4RJ, United Kingdom",
+    "lng": -0.2148221,
+    "lat": 51.3844087
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "North Swindon Baptist Church",
+    "Location / City": "Swindon",
+    "Church Address": "Hugo Dr, Swindon",
+    "Church Postcode / ZIP Code": "SN5 4EB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01793 737106",
+    "Church Website URL": "http://www.nsbc.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "06-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "North Swindon Baptist Church, SN5 4EB, United Kingdom",
+    "lng": -1.794567,
+    "lat": 51.599175
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Efree Church of Lethbridge",
+    "Location / City": "Lethbridge",
+    "Church Address": " 4717 24 Ave S, Lethbridge, AB",
+    "Church Postcode / ZIP Code": "T1K7C1",
+    "Church Country": "Canada",
+    "Church Contact number / email": "+1 403-329-3125",
+    "Church Website URL": "https://www.efreelethbridge.ca/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "10-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Efree Church of Lethbridge, T1K7C1, Canada",
+    "lng": -112.7981117,
+    "lat": 49.6688985
+  },
+  {
+    "Notes": "St Mary's Church, Newton Abbot",
+    "Church or Organisation": "St Mary's Abbotsbury",
+    "Location / City": "East Ogwell",
+    "Church Address": "Waverley Road, Newton Abbot",
+    "Church Postcode / ZIP Code": "TQ12 1EH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+44 1626 211346",
+    "Church Website URL": "www.newtonabbotparishes.co.uk",
+    "Church Denomination": "Anglican",
+    "Course start date": "04-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary's Abbotsbury, TQ12 1EH, United Kingdom",
+    "lng": -3.614248,
+    "lat": 50.532208
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "All Saints Laleham",
+    "Location / City": "Staines upon Thames",
+    "Church Address": "All Saints' Parish Office, The Broadway, Laleham",
+    "Church Postcode / ZIP Code": "TW18 1RZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01784 441160 ",
+    "Church Website URL": "https://www.allsaintslaleham.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "29-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "All Saints Laleham, TW18 1RZ, United Kingdom",
+    "lng": -0.4858285,
+    "lat": 51.4110287
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Crown Church",
+    "Location / City": "Hillingdon",
+    "Church Address": "The Living Room, High St, Cowley, Uxbridge",
+    "Church Postcode / ZIP Code": "UB8 2DZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01895 233466",
+    "Church Website URL": "http://www.crown-church.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "30-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Crown Church, UB8 2DZ, United Kingdom",
+    "lng": -0.4815261,
+    "lat": 51.5279746
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Colwall Community Church",
+    "Location / City": "Malvern",
+    "Church Address": "Walwyn Rd, Malvern",
+    "Church Postcode / ZIP Code": "WR13 6QG",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07719 542334",
+    "Church Website URL": "http://www.colwallcommunitychurch.com/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "25-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Colwall Community Church, WR13 6QG, United Kingdom",
+    "lng": -2.3402637,
+    "lat": 52.0901315
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christian Life Centre",
+    "Location / City": "Wolverhampton",
+    "Church Address": "Sedgley St",
+    "Church Postcode / ZIP Code": "WV2 3AJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "1902428345",
+    "Church Website URL": "https://www.clcwolverhampton.org/",
+    "Church Denomination": "Pentecostal",
+    "Course start date": "18-Jun-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christian Life Centre, WV2 3AJ, United Kingdom",
+    "lng": -2.1281887,
+    "lat": 52.5738068
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "International Harvest Church Newcastle",
+    "Location / City": "Newcastle upon Tyne",
+    "Church Address": " Stanhope St",
+    "Church Postcode / ZIP Code": "NE4 5HJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0191 273 9272",
+    "Church Website URL": "http://iharvest.org.uk/",
+    "Church Denomination": "Non-denominational / Charismatic",
+    "Course start date": "11-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "International Harvest Church Newcastle, NE4 5HJ, United Kingdom",
+    "lng": -1.62846,
+    "lat": 54.97524
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christian Student Fellowship",
+    "Location / City": "Bristol, RI",
+    "Church Address": "GHH 06, Roger Williams University, 1 Old Ferry Road",
+    "Church Postcode / ZIP Code": "2809",
+    "Church Country": "United States",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://linktr.ee/csf_rwu?utm_source=linktree_profile_share&ltsid=f9f804d0-0e1a-4ccd-bec2-96bb4270883e",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "17-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christian Student Fellowship, 2809, United States",
+    "lng": -71.259895,
+    "lat": 41.643093
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "City Church",
+    "Location / City": "Chester",
+    "Church Address": "Campbell Community Hall, Boughton",
+    "Church Postcode / ZIP Code": "CH3 5BR",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07463 079499",
+    "Church Website URL": "http://www.citychurchchester.co.uk/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "09-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "City Church, CH3 5BR, United Kingdom",
+    "lng": -0.10785461610554085,
+    "lat": 53.5541252
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Anchor Church Birmingham",
+    "Location / City": "Birmingham",
+    "Church Address": "58 Chester St",
+    "Church Postcode / ZIP Code": "B6 4BE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.anchorpointchurch.uk/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "04-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Anchor Church Birmingham, B6 4BE, United Kingdom",
+    "lng": -1.8860785933661135,
+    "lat": 52.493056949999996
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Donvale Christian College",
+    "Location / City": "Donvale, Melbourne, Victoria, Australia",
+    "Church Address": "155 Tindals Rd",
+    "Church Postcode / ZIP Code": "VIC 3111",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 3 9844 2471",
+    "Church Website URL": "http://www.donvale.vic.edu.au/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "02-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Donvale Christian College, VIC 3111, Australia",
+    "lng": 145.19371274255457,
+    "lat": -37.7727895
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Saanich Baptist Church",
+    "Location / City": "Victoria",
+    "Church Address": "4347 Wilkinson Rd",
+    "Church Postcode / ZIP Code": "V8Z 5B8",
+    "Church Country": "Canada",
+    "Church Contact number / email": "+1 250-744-2020",
+    "Church Website URL": "http://www.saanichbaptist.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "15-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Saanich Baptist Church, V8Z 5B8, Canada",
+    "lng": -123.401792,
+    "lat": 48.487076
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "The Oak Church",
+    "Location / City": "Stanningley, Leeds",
+    "Church Address": "54 Bradford Road",
+    "Church Postcode / ZIP Code": "LS28 6EF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://theoakchurch.co.uk/",
+    "Church Denomination": "Newfrontiers",
+    "Course start date": "10-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "The Oak Church, LS28 6EF, United Kingdom",
+    "lng": -1.6697654611259503,
+    "lat": 53.805376249999995
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Bruntsfield Evangelical Church",
+    "Location / City": "Edinburgh",
+    "Church Address": "70 Leamington Terrace",
+    "Church Postcode / ZIP Code": "EH10 4JU",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0131 564 1399",
+    "Church Website URL": "http://www.bruntsfield.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "15-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Bruntsfield Evangelical Church, EH10 4JU, United Kingdom",
+    "lng": -3.20719850861388,
+    "lat": 55.9381413
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Casuarina Baptist Church",
+    "Location / City": "Darwin, NT, Australia",
+    "Church Address": "44 Dripstone Rd",
+    "Church Postcode / ZIP Code": "NT 0810",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+61 8 8945 2183",
+    "Church Website URL": "http://casbap.org.au/",
+    "Church Denomination": "Baptist",
+    "Course start date": "17-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Casuarina Baptist Church, NT 0810, United Kingdom",
+    "lng": -0.427953,
+    "lat": 51.350081
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Andrew's Church, Leyland",
+    "Location / City": "Leyland",
+    "Church Address": "St Andrew's Church, Church Hall, Worden Lane",
+    "Church Postcode / ZIP Code": "PR25 3EL",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01772 622964",
+    "Church Website URL": "https://www.standrewsleyland.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "12-Sep-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Andrew's Church, Leyland, PR25 3EL, United Kingdom",
+    "lng": -2.69730545,
+    "lat": 53.6879358
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "North Bradley Baptist Church",
+    "Location / City": "North Bradley, Trowbridge",
+    "Church Address": "1a Westbury Rd",
+    "Church Postcode / ZIP Code": "BA14 0TN",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01225 374577",
+    "Church Website URL": "http://www.nbbc.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "27-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "North Bradley Baptist Church, BA14 0TN, United Kingdom",
+    "lng": -2.204594922811812,
+    "lat": 51.29647645
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Immanuel",
+    "Location / City": "Westgate, Chichester",
+    "Church Address": "Bishop Luffa School",
+    "Church Postcode / ZIP Code": "PO19 3HP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01243 968351",
+    "Church Website URL": "http://www.immanuelchichester.com/",
+    "Church Denomination": "Anglican",
+    "Course start date": "06-Aug-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Immanuel, PO19 3HP, United Kingdom",
+    "lng": -2.405948,
+    "lat": 53.736008
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Hebron",
+    "Location / City": "Licard, Wallasey",
+    "Church Address": "Egerton Grove",
+    "Church Postcode / ZIP Code": "CH45 4JL",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0151 923 2513",
+    "Church Website URL": "http://www.hebron-wallasey.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "17-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Hebron, CH45 4JL, United Kingdom",
+    "lng": -3.0439749,
+    "lat": 53.4220579
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Teen challenge",
+    "Location / City": "New Bedford, MA",
+    "Church Address": "20 Clifton Ave",
+    "Church Postcode / ZIP Code": "2301",
+    "Church Country": "United States",
+    "Church Contact number / email": "508?408?4378",
+    "Church Website URL": "https://tcnewengland.org/",
+    "Church Denomination": "",
+    "Course start date": "01-May-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Teen challenge, 2301, United States",
+    "lng": -73.745655,
+    "lat": 42.8352165
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Katharine's, Knockholt, with St Margaret's, Halstead",
+    "Location / City": "Sevenoaks | Halstead, Sevenoaks",
+    "Church Address": "Knockholt | Church Rd",
+    "Church Postcode / ZIP Code": "TN14 7LR | TN14 7HQ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.knockholtandhalsteadchurches.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "05-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Katharine's, Knockholt, with St Margaret's, Halstead, TN14 7LR | TN14 7HQ, United Kingdom",
+    "lng": 0.131763,
+    "lat": 51.326583
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "First Baptist Church",
+    "Location / City": "Bowling Green, KY",
+    "Church Address": " 621 E 12th Ave",
+    "Church Postcode / ZIP Code": "42101",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 270-842-0331",
+    "Church Website URL": "https://firstbaptistbg.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "19-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "First Baptist Church, 42101, United States",
+    "lng": -86.4437858,
+    "lat": 36.988375
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Walkley",
+    "Location / City": "Sheffield, England",
+    "Church Address": "Memorial Hall, Forbes Rd",
+    "Church Postcode / ZIP Code": "S6 2NW",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0114 383 0051",
+    "Church Website URL": "http://www.christchurchwalkley.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Walkley, S6 2NW, United Kingdom",
+    "lng": -1.50026,
+    "lat": 53.40138
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Heathcote parish church",
+    "Location / City": "Leamington Spa, Heathcote, Warwick",
+    "Church Address": "Cressida Close",
+    "Church Postcode / ZIP Code": "CV34 6DZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01926 335367",
+    "Church Website URL": "https://heathcoteparishchurch.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "27-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Heathcote parish church, CV34 6DZ, United Kingdom",
+    "lng": -1.5392725414126909,
+    "lat": 52.2684906
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Staines Congregational Church",
+    "Location / City": "Staines",
+    "Church Address": "Stainash Crescent",
+    "Church Postcode / ZIP Code": "TW18 1AY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01784 453256",
+    "Church Website URL": "http://www.stainescong.org/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "28-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Staines Congregational Church, TW18 1AY, United Kingdom",
+    "lng": -0.495890537670713,
+    "lat": 51.4298093
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "NEAC",
+    "Location / City": "Newtown, NSW",
+    "Church Address": "189 Church St",
+    "Church Postcode / ZIP Code": "2042",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 9557 2043",
+    "Church Website URL": "https://www.neac.com.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "04-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "NEAC, 2042, Australia",
+    "lng": 151.17915341902915,
+    "lat": -33.894548099999994
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary's Church",
+    "Location / City": "Shawbury SY44DS",
+    "Church Address": "Church St",
+    "Church Postcode / ZIP Code": "SY4 4NH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://shropshirechurches.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "08-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary's Church, SY4 4NH, United Kingdom",
+    "lng": -2.65616085,
+    "lat": 52.78672435
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Andrews Church",
+    "Location / City": "High Wycombe",
+    "Church Address": "Hatter's Ln",
+    "Church Postcode / ZIP Code": "HP13 7NJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01494 529668",
+    "Church Website URL": "https://standrewshw.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "25-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Andrews Church, HP13 7NJ, United Kingdom",
+    "lng": -0.722633,
+    "lat": 51.627871
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Clinton Baptist Church",
+    "Location / City": "Clinton, MI, USA",
+    "Church Address": "11555 Tecumseh-Clinton Hwy",
+    "Church Postcode / ZIP Code": "49236",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 517-456-6053",
+    "Church Website URL": "http://www.clintonbaptist.com/",
+    "Church Denomination": "Baptist",
+    "Course start date": "18-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Clinton Baptist Church, 49236, United States",
+    "lng": -83.963799,
+    "lat": 42.0565562
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary Magdalene, South Bersted",
+    "Location / City": "Bognor Regis",
+    "Church Address": "1 Bersted St",
+    "Church Postcode / ZIP Code": "PO22 9QH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01243 697596",
+    "Church Website URL": "http://www.southbersted.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "28-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary Magdalene, South Bersted, PO22 9QH, United Kingdom",
+    "lng": -0.67196,
+    "lat": 50.79389
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holyrood Evangelical Church",
+    "Location / City": "Edinburgh",
+    "Church Address": "121 Montgomery St",
+    "Church Postcode / ZIP Code": "EH7 5EP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://holyroodevangelical.org/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "24-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holyrood Evangelical Church, EH7 5EP, United Kingdom",
+    "lng": -3.1727658,
+    "lat": 55.9587987
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Wollongong Baptist Church",
+    "Location / City": "Wollongong NSW",
+    "Church Address": "330 Keira St",
+    "Church Postcode / ZIP Code": "2500",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 4228 3767",
+    "Church Website URL": "https://wollongongbaptist.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "11-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Wollongong Baptist Church, 2500, Australia",
+    "lng": 150.892022,
+    "lat": -34.43277
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Southam Community Church",
+    "Location / City": "Southam",
+    "Church Address": "Coventry Street",
+    "Church Postcode / ZIP Code": "CV47 0EP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01926 811144",
+    "Church Website URL": "https://southamcommunitychurch.co.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Southam Community Church, CV47 0EP, United Kingdom",
+    "lng": -1.388077,
+    "lat": 52.255389
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Wexford Bible Church",
+    "Location / City": "Wexford",
+    "Church Address": "Gaelscoil Loch Garman",
+    "Church Postcode / ZIP Code": "Y35 XW99",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+353 86 807 1972",
+    "Church Website URL": "https://wexfordbiblechurch.ie/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "05-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Wexford Bible Church, Y35 XW99, United Kingdom",
+    "lng": -2.072532,
+    "lat": 52.485276
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Port and Warrawong Churches",
+    "Location / City": "Port Kembla",
+    "Church Address": "Port Kembla Anglican, 111 Military Road | Warrawong Anglican, 282 Cowper Street",
+    "Church Postcode / ZIP Code": "2505 | 2502",
+    "Church Country": "Australia",
+    "Church Contact number / email": "4274 6953",
+    "Church Website URL": "https://www.pkw.org.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "25-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Port and Warrawong Churches, 2505 | 2502, Australia",
+    "lng": 150.8860433,
+    "lat": -34.4854733
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "First Baptist Church of Bowling Green",
+    "Location / City": "Bowling Green Ohio",
+    "Church Address": "749 S Wintergarden Rd",
+    "Church Postcode / ZIP Code": "43402",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 419-352-0417",
+    "Church Website URL": "https://www.firstbaptistbg.com/",
+    "Church Denomination": "Baptist",
+    "Course start date": "12-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "First Baptist Church of Bowling Green, 43402, United States",
+    "lng": -83.674573,
+    "lat": 41.360904
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Ashford Congregational Church",
+    "Location / City": "Ashford",
+    "Church Address": "Clarendon Rd",
+    "Church Postcode / ZIP Code": "TW15 2QA",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01784 240014",
+    "Church Website URL": "http://aboutacc.com/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "28-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Ashford Congregational Church, TW15 2QA, United Kingdom",
+    "lng": -0.4654882,
+    "lat": 51.432922
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Almond Valley Christian Reformed Church",
+    "Location / City": "Ripon",
+    "Church Address": "333 S Wilma Ave",
+    "Church Postcode / ZIP Code": "95366",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 209-599-4331",
+    "Church Website URL": "https://www.almondvalley.org/",
+    "Church Denomination": "Christian Reformed Church (CRC)",
+    "Course start date": "09-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Almond Valley Christian Reformed Church, 95366, United States",
+    "lng": -121.13543838926175,
+    "lat": 37.73810083221477
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "The Vine Community",
+    "Location / City": "Deer Park, WA 99006",
+    "Church Address": "1023 E Crawford St",
+    "Church Postcode / ZIP Code": "99006",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 509-720-7795",
+    "Church Website URL": "https://www.vine-community.com/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "16-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "The Vine Community, 99006, United States",
+    "lng": -117.46147623232324,
+    "lat": 47.95446685858586
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Rushmere Baptist Church",
+    "Location / City": "Rushmere St Andrew",
+    "Church Address": "110 The Street Rushmere",
+    "Church Postcode / ZIP Code": "IP5 1DF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01473 721455",
+    "Church Website URL": "https://www.rushmerebaptist.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "31-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Rushmere Baptist Church, IP5 1DF, United Kingdom",
+    "lng": 1.2133382,
+    "lat": 52.0723769
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Peter's CoE",
+    "Location / City": "Sandbach, Cheshire",
+    "Church Address": "School Ln",
+    "Church Postcode / ZIP Code": "CW11 3HU",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01270 762213",
+    "Church Website URL": "https://stpeters-elworth.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "15-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Peter's CoE, CW11 3HU, United Kingdom",
+    "lng": -2.3890346,
+    "lat": 53.1471758
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Benson with Ewelme",
+    "Location / City": "Benson | Ewelme",
+    "Church Address": "St Helen's Church, Church Road | St Mary the Virgin's Church, Parsons Lane ",
+    "Church Postcode / ZIP Code": "OX10 6SF | OX10 6HP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://bensonandewelmechurches.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "04-Mar-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Benson with Ewelme, OX10 6SF | OX10 6HP, United Kingdom",
+    "lng": -1.06924,
+    "lat": 51.61923
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Victoria Baptist Church",
+    "Location / City": "Eastbourne",
+    "Church Address": "7 Eldon Rd",
+    "Church Postcode / ZIP Code": "BN21 1UE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01323 737974",
+    "Church Website URL": "https://www.victoriabaptist.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "28-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Victoria Baptist Church, BN21 1UE, United Kingdom",
+    "lng": 0.2605009321249374,
+    "lat": 50.77976785
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Bethany School",
+    "Location / City": "Goudhurst, Kent",
+    "Church Address": "Bethany School",
+    "Church Postcode / ZIP Code": "TN17 1LB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01580 211273",
+    "Church Website URL": "https://bethanyschool.org.uk/",
+    "Church Denomination": "",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Bethany School, TN17 1LB, United Kingdom",
+    "lng": 0.484522,
+    "lat": 51.136489
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holy Trinity",
+    "Location / City": "Redhill",
+    "Church Address": "Carlton Rd",
+    "Church Postcode / ZIP Code": "RH1 2BX",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01737 766604",
+    "Church Website URL": "http://www.htredhill.com/",
+    "Church Denomination": "Anglican",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holy Trinity, RH1 2BX, United Kingdom",
+    "lng": -0.16685315212702118,
+    "lat": 51.2474105
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Dennistoun Baptist Church",
+    "Location / City": "Glasgow",
+    "Church Address": "140 Finlay Dr",
+    "Church Postcode / ZIP Code": "G31 2SB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0141 554 5180",
+    "Church Website URL": "http://www.dennistounbaptist.co.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "18-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Dennistoun Baptist Church, G31 2SB, United Kingdom",
+    "lng": -4.2148886632733635,
+    "lat": 55.8596061
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "The Journey Bayless",
+    "Location / City": "St. Louis, MO - USA",
+    "Church Address": "8512 Morgan Ford Rd",
+    "Church Postcode / ZIP Code": "63123",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 314-597-7551",
+    "Church Website URL": "http://www.thejourneybayless.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "14-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "The Journey Bayless, 63123, United States",
+    "lng": -90.287271,
+    "lat": 38.555693
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holy Redeemer Streatham",
+    "Location / City": "SW16",
+    "Church Address": "Parish Hall, Churchmore Rd",
+    "Church Postcode / ZIP Code": "SW16 5UZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8765 9923",
+    "Church Website URL": "http://www.holyredeemer.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "12-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holy Redeemer Streatham, SW16 5UZ, United Kingdom",
+    "lng": -0.138638,
+    "lat": 51.413639
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Peckham",
+    "Location / City": "SE15 1JF",
+    "Church Address": "676-680 Old Kent Rd",
+    "Church Postcode / ZIP Code": "SE15 1JF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 7732 5935",
+    "Church Website URL": "https://www.christchurchpeckham.info/",
+    "Church Denomination": "Anglican",
+    "Course start date": "14-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Peckham, SE15 1JF, United Kingdom",
+    "lng": -0.06273508338469547,
+    "lat": 51.481995299999994
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "First Baptist Church Pitkin",
+    "Location / City": "Pitkin, LA",
+    "Church Address": "7240 LA-463",
+    "Church Postcode / ZIP Code": "70656",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 318-358-3321",
+    "Church Website URL": "https://www.facebook.com/firstpitkin",
+    "Church Denomination": "Baptist",
+    "Course start date": "11-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "First Baptist Church Pitkin, 70656, United States",
+    "lng": -92.424855,
+    "lat": 30.672698
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Jesmond Parish Church",
+    "Location / City": "Jesmond, Newcastle Upon Tyne",
+    "Church Address": "Eskdale Terrace",
+    "Church Postcode / ZIP Code": "NE2 4DJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0191 212 7400",
+    "Church Website URL": "https://www.jpc.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "10-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Jesmond Parish Church, NE2 4DJ, United Kingdom",
+    "lng": -1.6066004013225101,
+    "lat": 54.98230835
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grace Community Church, Tipton",
+    "Location / City": "Tipton",
+    "Church Address": " Newhall St, Princes End",
+    "Church Postcode / ZIP Code": "DY4 9HL",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0121 5020618 ",
+    "Church Website URL": "https://www.gracecommunitychurch.co.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grace Community Church, Tipton, DY4 9HL, United Kingdom",
+    "lng": -2.0688088,
+    "lat": 52.5396138
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary's Barcombe",
+    "Location / City": "Rectory",
+    "Church Address": "St. Mary�s Church, Church Rd",
+    "Church Postcode / ZIP Code": "BN8 5TS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01273 400260",
+    "Church Website URL": "http://www.barcombe.net/church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "08-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary's Barcombe, BN8 5TS, United Kingdom",
+    "lng": 0.014998388902807084,
+    "lat": 50.911469249999996
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Staines Congregational church",
+    "Location / City": "Staines, Middlesex",
+    "Church Address": "Stainash Cres",
+    "Church Postcode / ZIP Code": "TW18 1AY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01784 453256",
+    "Church Website URL": "http://www.stainescong.org/",
+    "Church Denomination": "Congregationalism ",
+    "Course start date": "10-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Staines Congregational church, TW18 1AY, United Kingdom",
+    "lng": -0.495890537670713,
+    "lat": 51.4298093
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Burtonsville Baptist Chrich",
+    "Location / City": "Burtonsville, Maryland",
+    "Church Address": "3400 Spencerville Rd",
+    "Church Postcode / ZIP Code": "20866",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 301-421-9080",
+    "Church Website URL": "http://burtonsvillebaptist.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "07-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Burtonsville Baptist Chrich, 20866, United States",
+    "lng": -76.9418457978923,
+    "lat": 39.10660740117097
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Catonsville United Methodist Church",
+    "Location / City": "Catonsville, Maryland, USA",
+    "Church Address": "6 Melvin Ave",
+    "Church Postcode / ZIP Code": "21228",
+    "Church Country": "United States",
+    "Church Contact number / email": "+1 410-747-1886",
+    "Church Website URL": "http://catonsvilleumc.org/",
+    "Church Denomination": "United Methodist",
+    "Course start date": "04-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Catonsville United Methodist Church, 21228, United States",
+    "lng": -76.73680532107511,
+    "lat": 39.27157185
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Johns Anglican",
+    "Location / City": "Wilberforce",
+    "Church Address": "43 Macquarie Rd",
+    "Church Postcode / ZIP Code": "2756",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 4575 3800",
+    "Church Website URL": "https://www.stjohnswilberforce.org.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "05-Feb-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Johns Anglican, 2756, Australia",
+    "lng": 150.844152,
+    "lat": -33.55492
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Trinity Chippenham",
+    "Location / City": "Chippenham",
+    "Church Address": "Hardenhuish School, Hardenhuish Ln",
+    "Church Postcode / ZIP Code": "SN14 6RJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.trinitychippenham.org/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "15-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Trinity Chippenham, SN14 6RJ, United Kingdom",
+    "lng": -2.12904,
+    "lat": 51.470014
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Bovey Tracey Baptist Church",
+    "Location / City": "Newton Abbot",
+    "Church Address": "Hind St, Bovey Tracey",
+    "Church Postcode / ZIP Code": "TQ13 9HT",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01626 836691",
+    "Church Website URL": "http://www.boveybaptist.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "11-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Bovey Tracey Baptist Church, TQ13 9HT, United Kingdom",
+    "lng": -3.675449,
+    "lat": 50.594926
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Richmond Church",
+    "Location / City": "Sheffield",
+    "Church Address": "371 Richmond Road",
+    "Church Postcode / ZIP Code": "S13 8LT",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.richmondchurch.co.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "10-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Richmond Church, S13 8LT, United Kingdom",
+    "lng": -1.4016321106162888,
+    "lat": 53.364549
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holy Trinity Stalybridge",
+    "Location / City": "Stalybridge",
+    "Church Address": "The Church Office, 19 Corporation St",
+    "Church Postcode / ZIP Code": "SK15 2JS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0161 304 9308",
+    "Church Website URL": "http://hts.church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "09-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holy Trinity Stalybridge, SK15 2JS, United Kingdom",
+    "lng": -2.05548,
+    "lat": 53.4827
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Inglewood Christian Reformed Church",
+    "Location / City": "Edmonton, Alberta, Canada",
+    "Church Address": "12330 113 Ave NW",
+    "Church Postcode / ZIP Code": "T5M 2W4",
+    "Church Country": "Canada",
+    "Church Contact number / email": "+1 780-455-1066",
+    "Church Website URL": "http://inglewoodcrc.org/",
+    "Church Denomination": "Reformed",
+    "Course start date": "03-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Inglewood Christian Reformed Church, T5M 2W4, Canada",
+    "lng": -113.535614,
+    "lat": 53.562187
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Calvary Church, Brighton",
+    "Location / City": "Brighton",
+    "Church Address": "72 Viaduct Rd",
+    "Church Postcode / ZIP Code": "BN1 4ND",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01273 682112",
+    "Church Website URL": "http://www.calvary-brighton.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "07-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Calvary Church, Brighton, BN1 4ND, United Kingdom",
+    "lng": -0.13793422553301982,
+    "lat": 50.833743150000004
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Charlestown Presbyterian Church",
+    "Location / City": "Charlestown",
+    "Church Address": "16 Smart St 2290",
+    "Church Postcode / ZIP Code": "2290",
+    "Church Country": "Australia",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.charlestownpresbyterian.org.au/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "20-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Charlestown Presbyterian Church, 2290, Australia",
+    "lng": 151.696201,
+    "lat": -32.96367
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Parish of Longford",
+    "Location / City": "Longford, Tasmania",
+    "Church Address": "2 William Street, Longford\n",
+    "Church Postcode / ZIP Code": "7301",
+    "Church Country": "Tasmania",
+    "Church Contact number / email": "6391 2982",
+    "Church Website URL": "https://www.christchurchlongford.com.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Parish of Longford, 7301, Tasmania",
+    "lng": 147.120614,
+    "lat": -41.594102
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Shoal Creek",
+    "Location / City": "Liberty",
+    "Church Address": "6816 N Church Rd, Pleasant Valley",
+    "Church Postcode / ZIP Code": "64068",
+    "Church Country": "United States",
+    "Church Contact number / email": "816-6559-1755",
+    "Church Website URL": "https://www.shoalcreek.org/",
+    "Church Denomination": "Non-demoninational",
+    "Course start date": "07-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Shoal Creek, 64068, United States",
+    "lng": -94.47572986588204,
+    "lat": 39.21679869799877
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grimsby Baptist church",
+    "Location / City": "Grimsby",
+    "Church Address": "246-248 Laceby Rd",
+    "Church Postcode / ZIP Code": "DN34 5DW",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07948 013649",
+    "Church Website URL": "https://grimsbybaptistchurch.co.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "16-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grimsby Baptist church, DN34 5DW, United Kingdom",
+    "lng": -0.1073273,
+    "lat": 53.551413
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Leonard's",
+    "Location / City": "Denton Newhaven",
+    "Church Address": "Heighton Rd",
+    "Church Postcode / ZIP Code": "BN9 0RB",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01273 514319",
+    "Church Website URL": "http://www.dentonchurch.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Leonard's, BN9 0RB, United Kingdom",
+    "lng": 0.06282105000000149,
+    "lat": 50.80454295
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "NCC Equipping People",
+    "Location / City": "Gipsy Hill, London",
+    "Church Address": "2 Berridge Rd",
+    "Church Postcode / ZIP Code": "SE19 1EF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "073 6742 6439",
+    "Church Website URL": "https://www.nccep.co.uk/ep/",
+    "Church Denomination": "New Covenant",
+    "Course start date": "07-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "NCC Equipping People, SE19 1EF, United Kingdom",
+    "lng": 0.7696684691217118,
+    "lat": 51.4398544
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Margaret's Church",
+    "Location / City": "Angmering, Littlehampton",
+    "Church Address": "Arundel Rd",
+    "Church Postcode / ZIP Code": "BN16 4JS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01903 784459",
+    "Church Website URL": "http://www.stmargaretsangmering.church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "22-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Margaret's Church, BN16 4JS, United Kingdom",
+    "lng": -0.484757,
+    "lat": 50.828851
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Cockfosters",
+    "Location / City": "North London",
+    "Church Address": "Chalk Ln",
+    "Church Postcode / ZIP Code": "EN4 9JQ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 3137 5711",
+    "Church Website URL": "https://www.cockfosters.church/",
+    "Church Denomination": "Anglican",
+    "Course start date": "14-Jan-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Cockfosters, EN4 9JQ, United Kingdom",
+    "lng": -0.15080943057093102,
+    "lat": 51.6514357
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Worthing Tabernacle",
+    "Location / City": "Worthing",
+    "Church Address": "64 Chapel Rd",
+    "Church Postcode / ZIP Code": "BN11 1BN",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01903 236542",
+    "Church Website URL": "http://www.worthingtab.org.uk/",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "05-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Worthing Tabernacle, BN11 1BN, United Kingdom",
+    "lng": -0.3709794515336121,
+    "lat": 50.8148216
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Mosaic Church",
+    "Location / City": "Elephant and Castle, London",
+    "Church Address": "St George's Rd, Colnbrook St",
+    "Church Postcode / ZIP Code": "SE1 6EZ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07763 968639",
+    "Church Website URL": "https://www.mosaicmulticulturalchurch.org/",
+    "Church Denomination": "Reformed Evangelical",
+    "Course start date": "31-Oct-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Mosaic Church, SE1 6EZ, United Kingdom",
+    "lng": -0.104773,
+    "lat": 51.496868
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church Endcliffe",
+    "Location / City": "Sheffield",
+    "Church Address": "St. Augustine�s Church, Brocco Bank | Birkdale Prep School, Clarke Drive",
+    "Church Postcode / ZIP Code": "S11 8RS | S10 2NS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07968 980554",
+    "Church Website URL": "http://www.endcliffechurch.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "18-Apr-24",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church Endcliffe, S11 8RS | S10 2NS, United Kingdom",
+    "lng": -1.5021718858522726,
+    "lat": 53.3681689
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "King's Church",
+    "Location / City": "Aidanfield, Christchurch, New Zealand",
+    "Church Address": "2 Nash Road",
+    "Church Postcode / ZIP Code": "8025",
+    "Church Country": "New Zealand",
+    "Church Contact number / email": "+64 022 410 5511",
+    "Church Website URL": "http://www.kingschurch.co.nz/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "25-Oct-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "King's Church, 8025, New Zealand",
+    "lng": 172.57260918947003,
+    "lat": -43.5632732
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Carey Baptist Church",
+    "Location / City": "Reading",
+    "Church Address": "Carey St",
+    "Church Postcode / ZIP Code": "RG1 7JS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "+44 (0) 118 959 0058",
+    "Church Website URL": "https://www.careybaptistchurch.org.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Carey Baptist Church, RG1 7JS, United Kingdom",
+    "lng": -0.9795827809734523,
+    "lat": 51.45291205
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Biggar Parish Church",
+    "Location / City": "Biggar, South Lanarkshire",
+    "Church Address": "Biggar Kirk, Carwood Road",
+    "Church Postcode / ZIP Code": "ML12 6DT",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01899 229291",
+    "Church Website URL": "https://www.biggarkirk.com/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "13-Oct-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Biggar Parish Church, ML12 6DT, United Kingdom",
+    "lng": -3.52521,
+    "lat": 55.62438
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Gwersyllt Congregational Church",
+    "Location / City": "Gwersyllt, Wrexham, Wales LL11 4NT",
+    "Church Address": "Gwersyllt Congregational church Dodds Lane",
+    "Church Postcode / ZIP Code": "LL114NT",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://gwersylltchurch.com/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "28-Sep-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Gwersyllt Congregational Church, LL114NT, United Kingdom",
+    "lng": -3.013508,
+    "lat": 53.071651
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Beeston Free Church",
+    "Location / City": "Nottingham",
+    "Church Address": "Salthouse Ln",
+    "Church Postcode / ZIP Code": "NG9 2FY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0115 9677032",
+    "Church Website URL": "https://beeston-free.org/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "12-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Beeston Free Church, NG9 2FY, United Kingdom",
+    "lng": -1.2072403973266854,
+    "lat": 52.932575650000004
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Barneys",
+    "Location / City": "Croydon, South Australia",
+    "Church Address": "William St &, Elizabeth St",
+    "Church Postcode / ZIP Code": "5008",
+    "Church Country": "Australia",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://sbac.org.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "02-Oct-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Barneys, 5008, Australia",
+    "lng": 138.568424,
+    "lat": -34.886438
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Cornerstone Church Swindon",
+    "Location / City": "Swindon",
+    "Church Address": "William Morris Primary School, William Morris Way",
+    "Church Postcode / ZIP Code": "SN25 2PP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "07850 682 792",
+    "Church Website URL": "https://www.cornerstone-swindon.church/",
+    "Church Denomination": "Baptist",
+    "Course start date": "05-Oct-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Cornerstone Church Swindon, SN25 2PP, United Kingdom",
+    "lng": -1.814731,
+    "lat": 51.614547
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Glasgow Grace Church",
+    "Location / City": "Glasgow",
+    "Church Address": "15-17 Shakespeare St",
+    "Church Postcode / ZIP Code": "G20 8TH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://glasgowgrace.org/",
+    "Church Denomination": "Non-denominational",
+    "Course start date": "01-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Glasgow Grace Church, G20 8TH, United Kingdom",
+    "lng": -4.28335,
+    "lat": 55.88667
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Margaret's",
+    "Location / City": "Stanford le Hope, Essex",
+    "Church Address": "The Rectory, The Green",
+    "Church Postcode / ZIP Code": "SS17 0EP",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "(01375) 672715",
+    "Church Website URL": "https://www.achurchnearyou.com/church/6614/",
+    "Church Denomination": "Anglican",
+    "Course start date": "06-Sep-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Margaret's, SS17 0EP, United Kingdom",
+    "lng": 0.427098,
+    "lat": 51.514507
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church walkley",
+    "Location / City": "Sheffield",
+    "Church Address": "Memorial Hall, Forbes Rd",
+    "Church Postcode / ZIP Code": "S6 2NW",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0114 383 0051",
+    "Church Website URL": "http://www.christchurchwalkley.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "02-Nov-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church walkley, S6 2NW, United Kingdom",
+    "lng": -1.50026,
+    "lat": 53.40138
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St George's Church, Morden",
+    "Location / City": "Morden",
+    "Church Address": "St George's Church, Central Rd",
+    "Church Postcode / ZIP Code": "SM4 5RJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8685 0012",
+    "Church Website URL": "https://stgm.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "12-Jun-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St George's Church, Morden, SM4 5RJ, United Kingdom",
+    "lng": -0.24088,
+    "lat": 51.378221
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Christ Church",
+    "Location / City": "Sidcup",
+    "Church Address": " Christ Church, Main Rd",
+    "Church Postcode / ZIP Code": "DA14 6NJ",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "020 8308 0835",
+    "Church Website URL": "https://christchurchsidcup.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "31-May-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Christ Church, DA14 6NJ, United Kingdom",
+    "lng": 0.09653087764074178,
+    "lat": 51.426931550000006
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Luke's Reigate",
+    "Location / City": "Reigate, Surrey",
+    "Church Address": "St Luke's Church, 5 Church Rd",
+    "Church Postcode / ZIP Code": "RH2 8HY",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01737 210434",
+    "Church Website URL": "https://www.stlukesreigate.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "21-Apr-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Luke's Reigate, RH2 8HY, United Kingdom",
+    "lng": -0.20769,
+    "lat": 51.22656
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Junction Road Evangelical Church",
+    "Location / City": "Birmingham",
+    "Church Address": "14 Junction Rd",
+    "Church Postcode / ZIP Code": "B21 0EL",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.facebook.com/JunctionRoadEvangelicalChurch/?locale=en_GB",
+    "Church Denomination": "Non-denominational / Evangelical",
+    "Course start date": "14-Apr-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Junction Road Evangelical Church, B21 0EL, United Kingdom",
+    "lng": -1.9557036,
+    "lat": 52.5044633
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Grimsby Baptist Church",
+    "Location / City": "North East Lincs",
+    "Church Address": "246-248 Laceby Rd",
+    "Church Postcode / ZIP Code": "DN34 5DW",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01472 877 935\n",
+    "Church Website URL": "https://grimsbybaptistchurch.co.uk/",
+    "Church Denomination": "Baptist",
+    "Course start date": "09-Mar-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Grimsby Baptist Church, DN34 5DW, United Kingdom",
+    "lng": -0.1073273,
+    "lat": 53.551413
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Wilberforce Anglican Church",
+    "Location / City": "Wilberforce",
+    "Church Address": "43 Macquarie Rd",
+    "Church Postcode / ZIP Code": "2756",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 2 4575 3800",
+    "Church Website URL": "https://www.stjohnswilberforce.org.au/",
+    "Church Denomination": "Anglican",
+    "Course start date": "06-Mar-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Wilberforce Anglican Church, 2756, Australia",
+    "lng": 150.844152,
+    "lat": -33.55492
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Cuthbert's Church",
+    "Location / City": "Great Glen",
+    "Church Address": "Church Rd",
+    "Church Postcode / ZIP Code": "LE8 9FE",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0116 259 2238",
+    "Church Website URL": "http://greatglenbeneficechurches.co.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "17-Jan-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Cuthbert's Church, LE8 9FE, United Kingdom",
+    "lng": -1.036336,
+    "lat": 52.574303
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Andrew's Church",
+    "Location / City": "Hove",
+    "Church Address": "Church Rd",
+    "Church Postcode / ZIP Code": "BN3 2AD",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01273 738785",
+    "Church Website URL": "http://www.standrewshove.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "25-Jan-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Andrew's Church, BN3 2AD, United Kingdom",
+    "lng": -0.1742744,
+    "lat": 50.828262
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary's Wargrave",
+    "Location / City": "Wargrave",
+    "Church Address": "Station Rd",
+    "Church Postcode / ZIP Code": "RG10 8EU",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "0118 940 2300",
+    "Church Website URL": "https://www.wargravechurch.org.uk/",
+    "Church Denomination": "Anglican",
+    "Course start date": "08-Jan-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary's Wargrave, RG10 8EU, United Kingdom",
+    "lng": -0.87352,
+    "lat": 51.49926
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St Mary Barcombe",
+    "Location / City": "Barcombe",
+    "Church Address": "St. Mary�s Church, Church Rd",
+    "Church Postcode / ZIP Code": "BN8 5TS",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01273 400260\n",
+    "Church Website URL": "https://www.barcombechurch.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "16-Jan-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St Mary Barcombe, BN8 5TS, United Kingdom",
+    "lng": 0.016348,
+    "lat": 50.911455
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Holy Trinity Bungay",
+    "Location / City": "Bungay",
+    "Church Address": "12 Trinity St",
+    "Church Postcode / ZIP Code": "NR35 1EH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "01986 892553",
+    "Church Website URL": "https://www.htbungay.org/",
+    "Church Denomination": "Anglican",
+    "Course start date": "23-Jan-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Holy Trinity Bungay, NR35 1EH, United Kingdom",
+    "lng": 1.4384171666666665,
+    "lat": 52.455649
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Cornerstone Church Newcastle",
+    "Location / City": "Newcastle upon tyne",
+    "Church Address": "Cornerstone Church, Maple Terrace",
+    "Church Postcode / ZIP Code": "NE4 7SF",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://www.cornerstonechurchnewcastle.co.uk/",
+    "Church Denomination": "Non-denominational / Newfrontiers",
+    "Course start date": "07-Mar-23",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Cornerstone Church Newcastle, NE4 7SF, United Kingdom",
+    "lng": -1.63085,
+    "lat": 54.96715
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "Hesters Way Baptist Church",
+    "Location / City": "Cheltenham",
+    "Church Address": "Ashlands Rd",
+    "Church Postcode / ZIP Code": "GL51 0DH",
+    "Church Country": "United Kingdom",
+    "Church Contact number / email": "",
+    "Church Website URL": "https://hestersway.org/",
+    "Church Denomination": "Baptist",
+    "Course start date": "01-Nov-22",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "Hesters Way Baptist Church, GL51 0DH, United Kingdom",
+    "lng": -2.1141778,
+    "lat": 51.9086471
+  },
+  {
+    "Notes": "",
+    "Church or Organisation": "St John's Presbyterian",
+    "Location / City": "Hobart Tasmania Australia",
+    "Church Address": "188 Macquarie St",
+    "Church Postcode / ZIP Code": "7000",
+    "Church Country": "Australia",
+    "Church Contact number / email": "+61 3 6223 7213",
+    "Church Website URL": "https://www.stjohnshobart.com/",
+    "Church Denomination": "Presbyterian",
+    "Course start date": "",
+    "Is the above date a provisional / proposed date or a confirmed date?": "Confirmed! We're definitely going ahead!",
+    "key": "St John's Presbyterian, 7000, Australia",
+    "lng": 147.32541013136,
+    "lat": -42.88689745
+  }
+]
