@@ -97,12 +97,13 @@ const addressSearchControl = L.control.addressSearch(myAPIKey, {
     className: 'geoapify-control',
     // @ts-ignore
     resultCallback: (selectedAddress) => {
-      // console.log(selectedAddress);
+      console.log(selectedAddress);
       if (selectedAddress) {
         map.flyTo([selectedAddress.lat, selectedAddress.lon], 8)
+        const newCenter = {lat: selectedAddress.lat, lng: selectedAddress.lon}
+        updateSidebar(newCenter)
       }
-      const newCenter = {lat: selectedAddress.lat, lng: selectedAddress.lon}
-      updateSidebar(newCenter)
+
     },
     // @ts-ignore
     suggestionsCallback: (suggestions) => {
