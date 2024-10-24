@@ -19,12 +19,18 @@ body {
 /* marker cluster overrides */
 /* border */
 .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
-    background-color: rgba(0,0,0, 0.1);
+    background-color: transparent;
+    transition: background-color 1.8s ease-out;
 }
 
 .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
     background-color: black;
     color: white;
+}
+
+.marker-cluster-small:hover, .marker-cluster-medium:hover, .marker-cluster-large:hover {
+    background-color: rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease-in 0.1s;
 }
 
 /* leaflet popup overrides */
