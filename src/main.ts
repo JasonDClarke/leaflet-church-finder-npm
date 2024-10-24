@@ -60,7 +60,7 @@ markers.on('click', (a) => {
 });
 
 markers.on('clusterclick', (a) => {
-	updateSidebar(a.layer.latlng)
+
 });
 
 map.addLayer(markers)
