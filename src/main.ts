@@ -59,7 +59,7 @@ markers.on('click', (a) => {
 	updateSidebar(a.latlng)
 });
 
-markers.on('clusterclick', (a) => {
+markers.on('clusterclick', () => {
 
 });
 
