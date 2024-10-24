@@ -42,6 +42,9 @@ body {
 
 .leaflet-popup-content p {
     margin: 4px 0;
+    display: flex;
+    gap: 4px;
+    align-items: center;
 }
 
 .leaflet-popup-tip {
