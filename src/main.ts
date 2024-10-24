@@ -79,6 +79,8 @@ map.on('locationerror', onLocationError);
 // @ts-ignore
 const addressSearchControl = L.control.addressSearch(myAPIKey, {
     position: 'topleft',
+    mapViewBias: true,
+    className: 'geoapify-control',
     // @ts-ignore
     resultCallback: (selectedAddress) => {
       // console.log(selectedAddress);
