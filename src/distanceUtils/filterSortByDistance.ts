@@ -10,9 +10,9 @@ export const filterAndSortByDistance = (
         .sort((a, b) => haversine(center, a) - haversine(center, b)) // Sort closest first
 }
 
-export const sortByDistance = (
-    locations: Required<{lat: number, lng: number}>[],
+export const sortByDistance = <T extends Required<{lat: number, lng: number}>>(
+    locations: T[],
     center: {lat: number, lng: number}
-): Required<{lat: number, lng: number}>[] => {
+): T[] => {
     return locations.sort((a, b) => haversine(center, a) - haversine(center, b)) // Sort closest first
 }

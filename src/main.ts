@@ -10,6 +10,8 @@ import './main.css'
 
 
 import { exampleLocations } from './exampleLocations'
+import { haversine } from './distanceUtils/haversine';
+import { sortByDistance } from './distanceUtils/filterSortByDistance';
 
 const map = L.map('map', { zoomControl: false }).setView([53.505, -0.09], 6);
 const env = await import.meta.env;
@@ -53,6 +55,14 @@ exampleLocations.forEach((location) => {
     markers.addLayer(marker);
 })
 
+markers.on('click', (a) => {
+	updateSidebar(a.latlng)
+});
+
+markers.on('clusterclick', (a) => {
+	updateSidebar(a.layer.latlng)
+});
+
 map.addLayer(markers)
 // cluster group logic end
 
@@ -91,6 +101,8 @@ const addressSearchControl = L.control.addressSearch(myAPIKey, {
       if (selectedAddress) {
         map.flyTo([selectedAddress.lat, selectedAddress.lon], 8)
       }
+      const newCenter = {lat: selectedAddress.lat, lng: selectedAddress.lon}
+      updateSidebar(newCenter)
     },
     // @ts-ignore
     suggestionsCallback: (suggestions) => {
@@ -101,11 +113,14 @@ const addressSearchControl = L.control.addressSearch(myAPIKey, {
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
 
-  let content = ''
-exampleLocations.slice(0,5).forEach((location) => {
-    // console.log(location)
-    const details = `<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><a href="${location['Church Website URL']}"><img src="./url.svg" />${location['Church Website URL']}</a><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`
-    content += `<div class="location"><img class="pin" src="/mappinoutline.svg" /><div class="details">${details}</div><div class="distance"><img src="/distance.svg" /><p>0.8 mi</p></div></div>`
-})
-
-document.getElementById('sidebar')!.innerHTML = content;
+  const updateSidebar = (newCenter: {lat: number, lng: number}) => {
+    let content = ''
+    const center = newCenter || map.getCenter()
+    sortByDistance(exampleLocations, center).slice(0,5).forEach((location) => {
+      // console.log(location)
+      const details = `<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><a href="${location['Church Website URL']}"><img src="./url.svg" />${location['Church Website URL']}</a><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`
+      content += `<div class="location"><img class="pin" src="/mappinoutline.svg" /><div class="details">${details}</div><div class="distance"><img src="/distance.svg" /><p>${haversine(location, center).toFixed(1)} mi</p></div></div>`
+    })
+  
+    document.getElementById('sidebar')!.innerHTML = content;
+  }
