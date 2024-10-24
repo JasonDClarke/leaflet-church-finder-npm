@@ -4,6 +4,7 @@ body {
 
 #map {
     height: 100vh;
+    flex:1;
 }
 
 @media (max-width: 1023px) {
@@ -61,4 +62,50 @@ h2 {
     color: #FCDE0A;
     font-size: 24px;
     margin: 4px 0;
+}
+
+#sidebar {
+    width: 500px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+@media (max-width: 1023px) {
+    #sidebar {
+        width: 100%;
+    }
+}
+
+#container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#sidebar p, #sidebar a {
+    margin: 4px 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: white;
+}
+
+#sidebar h2 {
+    margin-left: 12px;
+}
+
+.location {
+    display: flex;
+    margin-right: 12px;
+}
+
+.location .pin {
+    width:80px;
+    margin: 0 20px;
+}
+
+.location div {
+    max-width:300px;
 }

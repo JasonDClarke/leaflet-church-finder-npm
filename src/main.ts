@@ -97,3 +97,13 @@ const addressSearchControl = L.control.addressSearch(myAPIKey, {
   });
   map.addControl(addressSearchControl);
   L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+
+  let content = ''
+exampleLocations.forEach((location) => {
+    // console.log(location)
+    const details = `<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><a href="${location['Church Website URL']}"><img src="./url.svg" />${location['Church Website URL']}</a><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`
+    content += `<div class="location"><img class="pin" src="/mappinoutline.svg" /><div>${details}</div><img src="/distance.svg" /></div>`
+})
+
+document.getElementById('sidebar')!.innerHTML = content;
