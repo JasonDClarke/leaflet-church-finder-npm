@@ -41,7 +41,7 @@ const markerIcon = L.icon({
 
 exampleLocations.forEach((location) => {
     // console.log(location)
-    const detailsPopup = L.popup().setContent(`<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><p><img src="./url.svg" />${location['Church Website URL']}</p><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`)
+    const detailsPopup = L.popup().setContent(`<h2>${location['Church or Organisation']}</h2><p>${location['Church Address']}</p><p>${location['Location / City']}</p><p>${location['Church Postcode / ZIP Code']}</p><a href="${location['Church Website URL']}"><img src="./url.svg" />${location['Church Website URL']}</a><p><img src="./phone.svg" />${location['Church Contact number / email']}</p><p><img src="./church.svg" />${location['Church Denomination']}</p>`)
     const marker = L.marker(new L.LatLng(location.lat, location.lng), {
         title: location['Church or Organisation'],
         icon: markerIcon
