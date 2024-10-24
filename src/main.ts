@@ -1,4 +1,5 @@
 import * as L from 'leaflet';
+import './font-face.css'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet.markercluster'
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css'
@@ -6,6 +7,7 @@ import 'leaflet.markercluster/dist/MarkerCluster.css'
 import '@geoapify/leaflet-address-search-plugin';
 import '@geoapify/leaflet-address-search-plugin/dist/L.Control.GeoapifyAddressSearch.min.css';
 import './main.css'
+
 
 import { exampleLocations } from './exampleLocations'
 
